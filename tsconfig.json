@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    "noEmit": false,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -24,12 +24,11 @@
     "noUnusedLocals": true,
     "keyofStringsOnly": true,
     "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "next.config.js"
   ],
   "exclude": [
     "node_modules",

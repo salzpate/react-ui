@@ -6,8 +6,7 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: [
-    './pages/**/*.tsx',
-    './components/**/*.tsx'
+    './src/components/**/*.tsx'
   ],
   darkMode: 'media',
   theme: {
