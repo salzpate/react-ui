@@ -6,6 +6,7 @@
   "keywords": [],
   "author": "Ronny Krammer",
   "license": "Apache-2.0",
+  "repository": "https://github.com/salzpate/react-ui.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
