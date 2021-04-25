@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import PageSection from '../src/components/PageSection';
+import { PageSection } from '../src/';
 
 describe('Thing', () => {
   it('renders without crashing', () => {
