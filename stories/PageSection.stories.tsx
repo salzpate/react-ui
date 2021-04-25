@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import { Meta, Story } from '@storybook/react';
-import PageSection, { PageSectionProps } from "./PageSection";
+import PageSection, { PageSectionProps } from "../src/components/PageSection/PageSection";
 
 export default {
   title: 'Components/PageSection',

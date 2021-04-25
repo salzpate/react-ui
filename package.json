@@ -1,27 +1,50 @@
 {
   "name": "@salzpate/react-ui",
   "description": "React UI component library built with Tailwind CSS",
-  "main": "index.js",
-  "version": "0.1.1",
-  "keywords": [],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "version": "0.1.0",
+  "license": "Apache 2.0",
   "author": "Ronny Krammer",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/salzpate/react-ui.git"
+  "module": "dist/react-ui.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=14"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsdx watch",
+    "build": "NODE_ENV=production tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook",
-    "build": "webpack"
+    "build-storybook": "build-storybook"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react",
-      "@babel/preset-flow"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "dist/react-ui.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-ui.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   },
   "peerDependencies": {
     "classnames": "^2.3.1",
@@ -36,55 +59,36 @@
     "react-hook-form": "^7.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.15",
-    "@babel/preset-env": "^7.13.15",
-    "@babel/preset-flow": "^7.13.13",
-    "@babel/preset-react": "^7.13.13",
-    "@babel/preset-typescript": "^7.10.4",
-    "@storybook/addon-actions": "^6.2.8",
-    "@storybook/addon-essentials": "^6.2.8",
-    "@storybook/addon-links": "^6.2.8",
+    "@babel/core": "^7.13.16",
+    "@size-limit/preset-small-lib": "^4.10.2",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.2.8",
+    "@storybook/react": "^6.2.9",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
     "@types/classnames": "^2.2.11",
-    "@types/lodash": "^4.14.168",
-    "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "@types/storybook__react": "^5.2.1",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "autoprefixer": "^10.2.5",
+    "@types/styled-components": "^5.1.9",
     "babel-loader": "^8.2.2",
-    "css-loader": "^5.2.4",
-    "eslint": "^7.24.0",
-    "eslint-config-prettier": "^8.2.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-standard": "^5.0.0",
-    "file-loader": "^6.2.0",
-    "postcss": "^8.2.10",
-    "postcss-flexbugs-fixes": "^5.0.2",
+    "husky": "^6.0.0",
+    "identity-obj-proxy": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.2.0",
     "react-is": "^17.0.2",
-    "style-loader": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "size-limit": "^4.10.2",
+    "styled-components": "^5.2.3",
     "stylelint": "^13.12.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^4.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.2.0",
     "tailwindcss": "^2.1.1",
-    "ts-loader": "^9.0.0",
-    "typescript": "^4.2.4",
-    "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0"
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
   }
 }

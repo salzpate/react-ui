@@ -1,11 +1,11 @@
-import { PropsWithChildren, ReactNode } from 'react';
+import React, { PropsWithChildren, ReactNode } from 'react';
 
 export interface PageSectionProps {
   id: string;
   headline: ReactNode;
   className?: string;
   subSection?: boolean;
-};
+}
 
 function PageSection(props: PropsWithChildren<PageSectionProps>): JSX.Element {
   const { id, headline, className, subSection = false, children } = props;
