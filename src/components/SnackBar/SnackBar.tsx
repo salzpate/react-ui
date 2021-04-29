@@ -1,5 +1,6 @@
+import React, { ReactNode, useState } from 'react';
 import cn from 'classnames';
-import React, { createContext, ReactNode, useContext, useState } from 'react';
+import { createCtx } from '../../utils';
 
 export const defaultDuration = 500;
 export const defaultInterval = 250;
@@ -10,16 +11,6 @@ export enum SnackBarTypes {
   success = 'success',
   warning = 'warning',
   loading = 'loading',
-}
-
-export function createCtx<ContextType>(): readonly [() => ContextType, React.Provider<ContextType | undefined>] {
-  const ctx = createContext<ContextType | undefined>(undefined);
-  function useCtx() {
-    const c = useContext(ctx);
-    if (!c) throw new Error('useCtx must be inside a Provider with a value');
-    return c;
-  }
-  return [useCtx, ctx.Provider] as const;
 }
 
 export type SnackbarProps = {
