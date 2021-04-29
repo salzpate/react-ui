@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import FooterLink, { FooterLinkProps } from "../src/components/Footer/FooterLink/FooterLink";
 
 export default {
-  title: 'Components/FooterLink',
+  title: 'Components/Footer/FooterLink',
   component: FooterLink,
 } as Meta;
 

@@ -5,7 +5,7 @@ import HeadlineTextElement, { HeadlineTextElementProps } from "../src/components
 import imageFile from '../public/test.jpg';
 
 export default {
-  title: 'Components/HeadlineTextElement',
+  title: 'Components/Commons/HeadlineTextElement',
   component: HeadlineTextElement,
 } as Meta;
 

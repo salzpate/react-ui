@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import PageSection, { PageSectionProps } from "../src/components/PageSection/PageSection";
 
 export default {
-  title: 'Components/PageSection',
+  title: 'Components/Commons/PageSection',
   component: PageSection,
 } as Meta;
 

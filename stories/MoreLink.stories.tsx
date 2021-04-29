@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import MoreLink, { MoreLinkProps } from "../src/components/MoreLink/MoreLink";
 
 export default {
-  title: 'Components/MoreLink',
+  title: 'Components/Commons/MoreLink',
   component: MoreLink,
 } as Meta;
 

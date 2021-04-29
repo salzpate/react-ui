@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import DisplayMore, { DisplayMoreProps } from "../src/components/DisplayMore/DisplayMore";
 
 export default {
-  title: 'Components/DisplayMore',
+  title: 'Components/Commons/DisplayMore',
   component: DisplayMore,
 } as Meta;
 

@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import Banner, { BannerProps, BannerTypes } from "../src/components/Banner/Banner";
 
 export default {
-  title: 'Components/Banner',
+  title: 'Components/Commons/Banner',
   component: Banner,
 } as Meta;
 
