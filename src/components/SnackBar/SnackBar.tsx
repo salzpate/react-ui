@@ -16,7 +16,6 @@ export type SnackBarProps = {
 };
 
 function SnackBar(props: SnackBarProps): JSX.Element {
-
   const { text, type, closeSnackbar } = props;
 
   return (
