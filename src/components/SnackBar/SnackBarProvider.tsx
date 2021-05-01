@@ -9,7 +9,7 @@ export type SnackbarProviderProps = {
   children: ReactNode;
 };
 
-type SnackbarContextType = {
+export type SnackbarContextType = {
   openSnackbar: (text: string, type: SnackBarTypes, duration: number) => void;
   closeSnackbar: () => void;
 };

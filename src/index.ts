@@ -5,4 +5,5 @@ export { Footer, FooterLink } from './components/Footer';
 export { HeadlineTextElement } from './components/HeadlineTextElement';
 export { MoreLink } from './components/MoreLink';
 export { PageSection } from './components/PageSection';
-export { SnackBarProvider, useSnackBar, SnackBarTypes } from './components/SnackBar';
+export { SnackBarProvider, SnackbarProviderProps, SnackbarContextType, useSnackBar, CtxProvider, SnackBar, SnackBarTypes, SnackBarProps } from './components/SnackBar';
+export { createCtx } from './utils/contextUtils';
