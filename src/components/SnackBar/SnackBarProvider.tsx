@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode, useContext, useState } from 'react';
-import { SnackBar,  SnackBarTypes } from './';
+import SnackBar, { SnackBarTypes } from './SnackBar';
 
 export const defaultDuration = 500;
 export const defaultInterval = 250;
