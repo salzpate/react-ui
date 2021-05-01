@@ -1,6 +1,5 @@
-import React, { ReactNode, useState } from 'react';
-import { createCtx } from '../../utils';
-import SnackBar, { SnackBarTypes } from './SnackBar';
+import React, { createContext, ReactNode, useContext, useState } from 'react';
+import { SnackBar,  SnackBarTypes } from './';
 
 export const defaultDuration = 500;
 export const defaultInterval = 250;
@@ -13,6 +12,16 @@ export type SnackbarContextType = {
   openSnackbar: (text: string, type: SnackBarTypes, duration: number) => void;
   closeSnackbar: () => void;
 };
+
+function createCtx<ContextType extends {} | null>() {
+  const ctx = createContext<ContextType | undefined>(undefined);
+  function useCtx() {
+    const c = useContext(ctx);
+    if (!c) throw new Error('useCtx must be inside a Provider with a value');
+    return c;
+  }
+  return [useCtx, ctx.Provider] as const;
+}
 
 export const [useSnackBar, CtxProvider] = createCtx<SnackbarContextType>();
 
