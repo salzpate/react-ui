@@ -1,8 +1,9 @@
 export { ActiveMenuItem, AppMenu, NavMenuItem, NavMenu } from './components/commons';
 export { Banner, BannerTypes } from './components/Banner';
-export { ContactCard } from './components/Contact';
+export { ContactCard } from './components/Contact/ContactCard';
 export { DisplayMore } from './components/DisplayMore';
-export { Footer, FooterLink } from './components/Footer';
+export { Footer } from './components/Footer/Footer';
+export { FooterLink } from './components/Footer/FooterLink';
 export { HeadlineTextElement } from './components/HeadlineTextElement';
 export { MoreLink } from './components/MoreLink';
 export { PageSection } from './components/PageSection';

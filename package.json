@@ -3,7 +3,7 @@
   "description": "React UI component library built with Tailwind CSS",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "Apache 2.0",
   "author": "Ronny Krammer",
   "module": "dist/react-ui.esm.js",
