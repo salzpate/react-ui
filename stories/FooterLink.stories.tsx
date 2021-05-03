@@ -11,6 +11,6 @@ const Template: Story<PropsWithChildren<FooterLinkProps>> = (args) => <FooterLin
 
 export const Default = Template.bind({});
 Default.args = {
-  href: '#',
+  href: '/',
   children: 'Content'
 };

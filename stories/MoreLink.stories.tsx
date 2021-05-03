@@ -13,13 +13,13 @@ const Template: Story<PropsWithChildren<MoreLinkProps>> = (args) => <MoreLink {.
 
 export const Default = Template.bind({});
 Default.args = {
-  href: '#',
+  href: '/',
   headline: 'Headline 1',
 };
 
 export const WithImageSource = Template.bind({});
 WithImageSource.args = {
-  href: '#',
+  href: '/',
   headline: 'Headline 1',
   imgSrc: imageFile,
 };

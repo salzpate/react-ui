@@ -14,17 +14,17 @@ Default.args = {
   text: '(c) Ronny Krammer',
   menuItems: [{
     children: 'Ausschreibung',
-    href: '#',
+    href: '/',
     activeMenuName: 'ausschreibung',
   },
   {
     children: 'Strecken',
-    href: '#',
+    href: '/',
     activeMenuName: 'strecken',
   },
   {
     children: 'Kontakt',
-    href: '#',
+    href: '/',
     activeMenuName: 'kontakt',
   },],
 };

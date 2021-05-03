@@ -4,11 +4,11 @@ import SnackBar, { SnackBarTypes } from './SnackBar';
 export const defaultDuration = 500;
 export const defaultInterval = 250;
 
-export type SnackbarProviderProps = {
+export type SnackBarProviderProps = {
   children: ReactNode;
 };
 
-export type SnackbarContextType = {
+export type SnackBarContextType = {
   openSnackbar: (text: string, type: SnackBarTypes, duration: number) => void;
   closeSnackbar: () => void;
 };
@@ -23,9 +23,9 @@ function createCtx<ContextType extends {} | null>() {
   return [useCtx, ctx.Provider] as const;
 }
 
-export const [useSnackBar, CtxProvider] = createCtx<SnackbarContextType>();
+export const [useSnackBar, CtxProvider] = createCtx<SnackBarContextType>();
 
-function SnackBarProvider(props: SnackbarProviderProps): JSX.Element {
+function SnackBarProvider(props: SnackBarProviderProps): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const [timeoutId, setTimeoutId] = useState(
     setTimeout(() => {
