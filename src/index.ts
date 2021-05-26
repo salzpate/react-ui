@@ -4,6 +4,7 @@ export { ContactCard } from './components/Contact/ContactCard';
 export { DisplayMore } from './components/DisplayMore';
 export { Footer } from './components/Footer/Footer';
 export { FooterLink } from './components/Footer/FooterLink';
+export { NavLink } from './components/Header/NavLink';
 export { HeadlineTextElement } from './components/HeadlineTextElement';
 export { MoreLink } from './components/MoreLink';
 export { PageSection } from './components/PageSection';
