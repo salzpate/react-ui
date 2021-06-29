@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { createContext, ReactNode, useContext, useState } from 'react';
 import SnackBar, { SnackBarTypes } from './SnackBar';
 
@@ -13,9 +14,10 @@ export type SnackBarContextType = {
   closeSnackbar: () => void;
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function createCtx<ContextType extends {} | null>() {
   const ctx = createContext<ContextType | undefined>(undefined);
-  function useCtx() {
+  function useCtx(): ContextType | undefined {
     const c = useContext(ctx);
     if (!c) throw new Error('useCtx must be inside a Provider with a value');
     return c;

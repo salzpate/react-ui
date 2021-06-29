@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState } from 'react';
 
 export type DisplayMoreProps = {
@@ -16,7 +17,7 @@ function DisplayMore(props: React.PropsWithChildren<DisplayMoreProps>): JSX.Elem
         <div className="mt-2 text-right">
           <button
             className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
-            onClick={() => setIsDisplayed(true)}
+            onClick={(): void => setIsDisplayed(true)}
           >
             Mehr
           </button>

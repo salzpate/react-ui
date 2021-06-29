@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { PropsWithChildren, ReactNode } from 'react';
 import cn from 'classnames';
 
