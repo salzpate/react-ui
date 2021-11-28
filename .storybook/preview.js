@@ -1,5 +1,4 @@
-import { withNextRouter } from 'storybook-addon-next-router';
-import { addDecorator } from '@storybook/react';
+import { RouterContext } from "next/dist/shared/lib/router-context";
 
 import "../src/styles/tailwind.css"
 
@@ -7,13 +6,7 @@ import "../src/styles/tailwind.css"
 export const parameters = {
   // https://storybook.js.org/docs/react/essentials/actions#automatically-matching-args
   actions: { argTypesRegex: '^on.*' },
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  },
 };
-
-addDecorator(
-  withNextRouter({
-    path: '/',
-    asPath: '/',
-    query: {},
-    push() {}
-  })
-);
