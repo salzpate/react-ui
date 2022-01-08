@@ -15,6 +15,7 @@ export type SnackBarContextType = {
 };
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+// eslint-disable-next-line @typescript-eslint/ban-types
 function createCtx<ContextType extends {} | null>() {
   const ctx = createContext<ContextType | undefined>(undefined);
   function useCtx(): ContextType | undefined {
@@ -38,22 +39,22 @@ function SnackBarProvider(props: SnackBarProviderProps): JSX.Element {
   const [type, setType] = useState(SnackBarTypes.info);
   const { children } = props;
 
-  const triggerSnackbar = (text: string, type: SnackBarTypes, duration: number): void => {
-    setText(text);
-    setType(type);
+  const triggerSnackbar = (snackbarText: string, snackbarType: SnackBarTypes, duration: number): void => {
+    setText(snackbarText);
+    setType(snackbarType);
     setIsOpen(true);
     clearTimeout(timeoutId);
     setTimeoutId(setTimeout(() => setIsOpen(false), duration));
   };
 
-  const openSnackbar = (text: string, type: SnackBarTypes, duration: number): void => {
+  const openSnackbar = (snackbarText: string, snackbarType: SnackBarTypes, duration: number): void => {
     if (isOpen === true) {
       setIsOpen(false);
       setTimeout(() => {
-        triggerSnackbar(text, type, duration);
+        triggerSnackbar(snackbarText, snackbarType, duration);
       }, defaultInterval);
     } else {
-      triggerSnackbar(text, type, duration);
+      triggerSnackbar(snackbarText, snackbarType, duration);
     }
   };
 
