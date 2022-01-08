@@ -17,7 +17,7 @@ function Footer(props: FooterProps): JSX.Element {
           <div className="flex items-center order-2 lg:order-1">
             <div className="text-gray-400 font-thin my-8 text-xs text-center md:text-left md:text-sm md:my-0">{text}</div>
           </div>
-          <div className="flex order-1 flex-col md:flex-grow md:items-stretch md:justify-end md:flex-row">
+          <div className="flex order-1 flex-col md:grow md:items-stretch md:justify-end md:flex-row">
             {menuItems.map((item, i) => {
               return (
                 <span key={'footer' + i} className="text-center md:text-left">

@@ -16,12 +16,12 @@ const excludeFiles = [...documentationFiles, ...typeDefinitionFiles];
 const entryPoints = allSrcFiles.filter(item => !excludeFiles.includes(item));
 
 const options = {
+  entryPoints,
   outdir: './dist',
-  entryPoints: ['src/index.ts'],
+  outbase: './src',
   format: 'esm',
-  tsconfig: './tsconfig.json',
-  logLevel: 'debug',
-  minify: true,
+  logLevel: 'info',
+  minify: false,
   sourcemap: true,
   target: ['esnext'],
   loader: { '.png': 'dataurl' },

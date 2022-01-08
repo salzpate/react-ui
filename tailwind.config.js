@@ -5,10 +5,9 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [
+  content: [
     './src/components/**/*.tsx'
   ],
-  darkMode: 'media',
   theme: {
     columnCount: [ 1, 2, 3, 4, 5 ],
     colors: {
@@ -47,10 +46,4 @@ module.exports = {
       },
     },
   },
-  variants: {
-    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
-    columnCount: ['responsive'],
-    gap: ['hover', 'focus'],
-    margin: ['responsive', 'last']
-  }
 }
