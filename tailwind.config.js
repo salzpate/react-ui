@@ -19,7 +19,7 @@ module.exports = {
       primary: '#fff',
       secondary: '#8b2000',
       blue: colors.blue,
-      gray: colors.trueGray,
+      gray: colors.neutral,
       orange: colors.orange,
       red: colors.red,
       yellow: colors.yellow,

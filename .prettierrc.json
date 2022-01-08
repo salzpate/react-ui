@@ -3,7 +3,6 @@
   "bracketSpacing": true,
   "endOfLine": "lf",
   "eslint linebreak-style": ["error", "windows"],
-  "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
   "parser": "typescript",
   "printWidth": 240,
