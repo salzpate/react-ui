@@ -1,5 +1,3 @@
-/* eslint-disable jest/expect-expect */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
 import * as ReactDOM from 'react-dom';
 import { PageSection } from '../src/';
