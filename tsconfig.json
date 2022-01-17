@@ -20,7 +20,9 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "isolatedModules": true,
+    "types": ["node"]
   },
   "include": ["src", "types", "typings.d.ts"],
   "exclude": ["node_modules", "dist"],

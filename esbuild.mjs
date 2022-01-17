@@ -16,14 +16,15 @@ const excludeFiles = [...documentationFiles, ...typeDefinitionFiles];
 const entryPoints = allSrcFiles.filter(item => !excludeFiles.includes(item));
 
 const options = {
-  entryPoints,
+  entryPoints: ['./src/index.ts'],
+  bundle: true,
   outdir: './dist',
   outbase: './src',
-  format: 'esm',
   logLevel: 'info',
-  minify: false,
+  minify: true,
   sourcemap: true,
-  target: ['esnext'],
+  target: ['node16.13.0'],
+  platform: 'node',
   loader: { '.png': 'dataurl' },
   plugins: [
     fileImport(),
@@ -54,4 +55,4 @@ const options = {
   ]
 };
 
-build(options).catch((e) => { console.error('e'); console.error(e); process.exit(1); });
+build(options).catch((e) => { process.exit(1); });

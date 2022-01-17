@@ -1,2 +1,4 @@
-export { default as SnackBarProvider, SnackBarProviderProps, SnackBarContextType, useSnackBar } from './SnackBarProvider';
-export { default as SnackBar, SnackBarTypes, SnackBarProps } from './SnackBar';
+export { default as SnackBarProvider, useSnackBar } from './SnackBarProvider';
+export type { SnackBarProviderProps, SnackBarContextType } from './SnackBarProvider';
+export { default as SnackBar, SnackBarTypes } from './SnackBar';
+export type { SnackBarProps } from './SnackBar';
