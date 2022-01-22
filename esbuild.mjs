@@ -18,13 +18,15 @@ const entryPoints = allSrcFiles.filter(item => !excludeFiles.includes(item));
 const options = {
   entryPoints: ['./src/index.ts'],
   bundle: true,
+  format: 'esm',
   outdir: './dist',
   outbase: './src',
   logLevel: 'info',
   minify: true,
   sourcemap: true,
-  target: ['node16.13.0'],
-  platform: 'node',
+  splitting: true,
+  target: ['esnext'],
+  platform: 'browser',
   loader: { '.png': 'dataurl' },
   plugins: [
     fileImport(),
