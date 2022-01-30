@@ -8,7 +8,7 @@ import cssFocusVisible from 'postcss-focus-visible';
 import tailwindcss from 'tailwindcss';
 import tailwindConfig from './tailwind.config.js';
 import autoprefixer from 'autoprefixer';
-import nodeExternalsPlugin from 'esbuild-node-externals';
+import { nodeExternalsPlugin } from 'esbuild-node-externals';
 
 const allSrcFiles = glob.sync('./src/**/*+(.ts|.tsx|.css|.svg|.png|.jpg|.jpeg|.gif)');
 const documentationFiles = glob.sync('./src/**/*documentation*/*');
@@ -24,7 +24,6 @@ const commonOptions = {
   minify: true,
   sourcemap: true,
   loader: { '.png': 'dataurl' },
-  splitting: true,
   plugins: [
     nodeExternalsPlugin(),
     fileImport(),
@@ -65,6 +64,7 @@ const cjsOptions = {
 const esmOptions = {
   ...commonOptions,
   format: 'esm',
+  splitting: true,
   target: ['esnext'],
   outdir: './dist/esm',
 };
