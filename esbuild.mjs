@@ -8,6 +8,7 @@ import cssFocusVisible from 'postcss-focus-visible';
 import tailwindcss from 'tailwindcss';
 import tailwindConfig from './tailwind.config.js';
 import autoprefixer from 'autoprefixer';
+import nodeExternalsPlugin from 'esbuild-node-externals';
 
 const allSrcFiles = glob.sync('./src/**/*+(.ts|.tsx|.css|.svg|.png|.jpg|.jpeg|.gif)');
 const documentationFiles = glob.sync('./src/**/*documentation*/*');
