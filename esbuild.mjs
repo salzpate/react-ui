@@ -26,7 +26,7 @@ const options = {
   sourcemap: true,
   splitting: true,
   target: ['esnext'],
-  platform: 'browser',
+  platform: 'node',
   loader: { '.png': 'dataurl' },
   plugins: [
     fileImport(),
