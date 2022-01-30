@@ -3,14 +3,14 @@
   "description": "React UI component library built with Tailwind CSS",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "license": "Apache-2.0",
   "author": "Ronny Krammer",
   "repository": {
     "type": "git",
     "url": "https://github.com/salzpate/react-ui.git"
   },
-  "module": "dist/index.js",
+  "module": "dist/index.esm.js",
   "files": [
     "dist",
     "src"
@@ -100,6 +100,8 @@
     "stylelint-order": "^5.0.0",
     "stylelint-prettier": "^2.0.0",
     "tailwindcss": "^3.0.18",
+    "temp": "^0.9.4",
+    "tmp": "^0.2.1",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5"
   }

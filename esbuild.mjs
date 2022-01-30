@@ -15,17 +15,13 @@ const typeDefinitionFiles = glob.sync('./src/**/*+(.d.ts)');
 const excludeFiles = [...documentationFiles, ...typeDefinitionFiles];
 const entryPoints = allSrcFiles.filter(item => !excludeFiles.includes(item));
 
-const options = {
+const commonOptions = {
   entryPoints: ['./src/index.ts'],
   bundle: true,
-  format: 'esm',
-  outdir: './dist',
   outbase: './src',
   logLevel: 'info',
   minify: true,
   sourcemap: true,
-  splitting: true,
-  target: ['esnext'],
   platform: 'node',
   loader: { '.png': 'dataurl' },
   plugins: [
@@ -57,4 +53,19 @@ const options = {
   ]
 };
 
-build(options).catch((e) => { process.exit(1); });
+const cjsOptions = {
+  ...commonOptions,
+  format: 'cjs',
+  target: ['node16.0'],
+  outdir: './dist',
+};
+
+const esmOptions = {
+  ...commonOptions,
+  format: 'esm',
+  target: ['esnext'],
+  outfile: './dist/index.esm.js',
+};
+
+build(cjsOptions).catch((e) => { process.exit(1); });
+build(esmOptions).catch((e) => { process.exit(1); });
