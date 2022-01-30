@@ -22,9 +22,10 @@ const commonOptions = {
   logLevel: 'info',
   minify: true,
   sourcemap: true,
-  platform: 'node',
   loader: { '.png': 'dataurl' },
+  splitting: true,
   plugins: [
+    nodeExternalsPlugin(),
     fileImport(),
     postCssPlugin({
       inject: false,
@@ -56,15 +57,15 @@ const commonOptions = {
 const cjsOptions = {
   ...commonOptions,
   format: 'cjs',
-  target: ['node16.0'],
-  outdir: './dist',
+  target: ['esnext'],
+  outdir: './dist/cjs',
 };
 
 const esmOptions = {
   ...commonOptions,
   format: 'esm',
   target: ['esnext'],
-  outfile: './dist/index.esm.js',
+  outdir: './dist/esm',
 };
 
 build(cjsOptions).catch((e) => { process.exit(1); });
