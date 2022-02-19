@@ -17,6 +17,8 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           registry-url: 'https://npm.pkg.github.com'
           scope: '@salzpate'
+      - name: Authenticate with GitHub package registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_GITHUB_TOKEN }}" > ~/.npmrc
       - name: Install dependencies and build (with cache)
         uses: bahmutov/npm-install@v1
       - name: Lint
