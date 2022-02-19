@@ -33,6 +33,8 @@ module.exports = {
         'header-color': 'rgba(23, 23, 23, 1)',
         'secondary-dark': '#f44336',
         alternate: '#007cc2',
+        'page-headline': colors.gray[900],
+        'page-headline-dark': colors.gray[200],
       },
       opacity: {
         '15': '0.15',

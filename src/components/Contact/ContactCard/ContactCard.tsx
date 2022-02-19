@@ -30,7 +30,7 @@ function ContactCard(props: ContactCardProps): JSX.Element {
         {phone && (
           <div className="my-2">
             <a
-              href={'tel:' + phone.replace(/\s/g, '')}
+              href={`tel: ${phone.replace(/\s/g, '')}`}
               className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary dark:hover:bg-secondary-dark hover:bg-opacity-15"
             >
               <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -43,7 +43,7 @@ function ContactCard(props: ContactCardProps): JSX.Element {
         {fax && (
           <div className="my-2">
             <a
-              href={'tel:' + fax.replace(/\s/g, '')}
+              href={`tel: ${fax.replace(/\s/g, '')}`}
               className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary dark:hover:bg-secondary-dark hover:bg-opacity-15"
             >
               <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
