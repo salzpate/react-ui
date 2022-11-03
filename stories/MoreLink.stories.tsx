@@ -1,6 +1,6 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren } from 'react';
 import { Meta, Story } from '@storybook/react';
-import MoreLink, { MoreLinkProps } from "../src/components/MoreLink/MoreLink";
+import MoreLink, { MoreLinkProps } from '../src/components/MoreLink/MoreLink';
 
 export default {
   title: 'Components/Commons/MoreLink',
@@ -9,7 +9,7 @@ export default {
 
 import imageFile from '../public/test.jpg';
 
-const Template: Story<PropsWithChildren<MoreLinkProps>> = (args) => <MoreLink {...args} />;
+const Template: Story<PropsWithChildren<MoreLinkProps>> = args => <MoreLink {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

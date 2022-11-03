@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import SnackBar, { SnackBarProps, SnackBarTypes } from "../src/components/SnackBar/SnackBar";
+import SnackBar, { SnackBarProps, SnackBarTypes } from '../src/components/SnackBar/SnackBar';
 
 export default {
   title: 'Components/Commons/SnackBar',
   component: SnackBar,
   argTypes: {
     closeSnackbar: {
-      action: 'Close SnackBar clicked'
-    }
+      action: 'Close SnackBar clicked',
+    },
   },
 } as Meta;
 
-const Template: Story<SnackBarProps> = (args) => <SnackBar {...args} />;
+const Template: Story<SnackBarProps> = args => <SnackBar {...args} />;
 
 export const Info = Template.bind({});
 Info.args = {

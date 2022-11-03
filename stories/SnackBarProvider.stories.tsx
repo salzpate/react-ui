@@ -1,13 +1,12 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import SnackBarProvider, { useSnackBar } from "../src/components/SnackBar/SnackBarProvider";
-import { SnackBarTypes } from "../src/components/SnackBar/SnackBar";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import SnackBarProvider from '../src/components/SnackBar/SnackBarProvider';
 
 export default {
   title: 'Components/Commons/SnackBarProvider',
   component: SnackBarProvider,
   decorators: [
-    (Story) => (
+    Story => (
       <SnackBarProvider>
         <Story />
       </SnackBarProvider>
@@ -15,11 +14,11 @@ export default {
   ],
 } as Meta;
 
-function TestSnackBarComponent () {
-  const { openSnackbar } = useSnackBar();
-  const onButtonClick = () => openSnackbar('Test', SnackBarTypes.success, 8000);
+function TestSnackBarComponent() {
+  // const { openSnackbar } = useSnackBar();
+  // const onButtonClick = () => openSnackbar('Test', SnackBarTypes.success, 8000);
 
-  return <button onClick={onButtonClick}>Hallo</button>;
+  return <button>Hallo</button>;
 }
 
 const Template: Story = () => <TestSnackBarComponent />;

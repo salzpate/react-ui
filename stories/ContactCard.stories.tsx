@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import ContactCard, {ContactCardProps } from "../src/components/Contact/ContactCard/ContactCard";
+import ContactCard, { ContactCardProps } from '../src/components/Contact/ContactCard/ContactCard';
 
 export default {
   title: 'Components/Contact/ContactCard',
@@ -9,7 +9,7 @@ export default {
 
 import imageFile from '../public/test.jpg';
 
-const Template: Story<ContactCardProps> = (args) => <ContactCard {...args} />;
+const Template: Story<ContactCardProps> = args => <ContactCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

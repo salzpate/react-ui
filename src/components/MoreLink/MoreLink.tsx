@@ -20,17 +20,13 @@ function MoreLink(props: PropsWithChildren<MoreLinkProps>): JSX.Element {
     <div>
       {imgSrc && (
         <Link href={href}>
-          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a>
-            <img src={imgSrc} width="100%" className="images-dark" alt={headline as string} />
-          </a>
+          <img src={imgSrc} width="100%" className="images-dark" alt={headline as string} />
         </Link>
       )}
       <h3 className={cn('text-gray-900 uppercase tracking-tight text-lg sm:text-xl lg:font-medium lg:text-2xl dark:text-gray-200', { 'mt-4': imgSrc })}>{headline}</h3>
       <div className="my-4 text-sm lg:text-base font-light lg:font-normal">{children}</div>
       <div className="my-4">
-        <Link href={href}>
-          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <Link href={href} legacyBehavior>
           <a className="inline-flex items-center gap-0 hover:gap-1">
             <span>Weitere Informationen</span>
             <svg className="w-3 h-3 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
