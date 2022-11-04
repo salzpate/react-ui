@@ -7,10 +7,13 @@
   },
   "extends": "./tsconfig.json",
   "include": [
-    "test",
-    "stories",
     ".eslintrc.js",
     "jest.config.js",
     "prettier.config.js",
+    "src",
+    "stories",
+    "test",
+    "types",
+    "typings.d.ts",
   ]
 }
