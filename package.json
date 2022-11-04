@@ -3,7 +3,7 @@
   "description": "React UI component library built with Tailwind CSS",
   "main": "dist/cjs/index.js",
   "types": "dist/index.d.ts",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "Apache-2.0",
   "author": "Ronny Krammer",
   "repository": {

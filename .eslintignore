@@ -1,0 +1,6 @@
+/dist/**
+postcss.config.js
+esbuild.fileImport.js
+esbuild.mjs
+esbuild.postcss.js
+esbuild.svgr.js

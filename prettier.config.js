@@ -1,1 +1,1 @@
-module.exports = require('@salzpate/eslint-config/prettier.config')
+module.exports = require('@salzpate/eslint-config/prettier.config');

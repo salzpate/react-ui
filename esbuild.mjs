@@ -29,12 +29,7 @@ const commonOptions = {
     fileImport(),
     postCssPlugin({
       inject: false,
-      plugins: [
-        cssNested,
-        cssFocusVisible,
-        tailwindcss(tailwindConfig),
-        autoprefixer
-      ]
+      plugins: [cssNested, cssFocusVisible, tailwindcss(tailwindConfig), autoprefixer],
     }),
     svgr({
       template: ({ template }, opts, { imports, interfaces, componentName, props, jsx, exports }) => {
@@ -49,9 +44,9 @@ const commonOptions = {
             return ${jsx};
           }
           `;
-      }
-    })
-  ]
+      },
+    }),
+  ],
 };
 
 const cjsOptions = {
@@ -69,5 +64,9 @@ const esmOptions = {
   outdir: './dist/esm',
 };
 
-build(cjsOptions).catch((e) => { process.exit(1); });
-build(esmOptions).catch((e) => { process.exit(1); });
+build(cjsOptions).catch(e => {
+  process.exit(1);
+});
+build(esmOptions).catch(e => {
+  process.exit(1);
+});
