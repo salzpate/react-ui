@@ -1,23 +1,25 @@
-import React, { PropsWithChildren } from 'react';
-import { Meta, Story } from '@storybook/react';
-import DisplayMore, { DisplayMoreProps } from '../src/components/DisplayMore/DisplayMore';
+import { Meta, StoryObj } from '@storybook/react';
+import DisplayMore from '../src/components/DisplayMore/DisplayMore';
 
-export default {
+const meta: Meta<typeof DisplayMore> = {
   title: 'Components/Commons/DisplayMore',
   component: DisplayMore,
-} as Meta;
-
-const Template: Story<PropsWithChildren<DisplayMoreProps>> = args => <DisplayMore {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  id: 'id1',
-  children: 'Content',
 };
 
-export const WithClassName = Template.bind({});
-WithClassName.args = {
-  id: 'id3',
-  children: 'Content',
-  className: 'bg-gray-200',
+export default meta;
+type Story = StoryObj<typeof DisplayMore>;
+
+export const Default: Story = {
+  args: {
+    id: 'id1',
+    children: 'Content',
+  },
+};
+
+export const WithClassName: Story = {
+  args: {
+    id: 'id3',
+    children: 'Content',
+    className: 'bg-gray-200',
+  },
 };

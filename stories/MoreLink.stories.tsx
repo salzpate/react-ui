@@ -1,25 +1,27 @@
-import React, { PropsWithChildren } from 'react';
-import { Meta, Story } from '@storybook/react';
-import MoreLink, { MoreLinkProps } from '../src/components/MoreLink/MoreLink';
+import { Meta, StoryObj } from '@storybook/react';
+import MoreLink from '../src/components/MoreLink/MoreLink';
 
-export default {
+const meta: Meta<typeof MoreLink> = {
   title: 'Components/Commons/MoreLink',
   component: MoreLink,
-} as Meta;
+};
 
 import imageFile from '../public/test.jpg';
 
-const Template: Story<PropsWithChildren<MoreLinkProps>> = args => <MoreLink {...args} />;
+export default meta;
+type Story = StoryObj<typeof MoreLink>;
 
-export const Default = Template.bind({});
-Default.args = {
-  href: '/',
-  headline: 'Headline 1',
+export const Default: Story = {
+  args: {
+    href: '/',
+    headline: 'Headline 1',
+  },
 };
 
-export const WithImageSource = Template.bind({});
-WithImageSource.args = {
-  href: '/',
-  headline: 'Headline 1',
-  imgSrc: imageFile,
+export const WithImageSource: Story = {
+  args: {
+    href: '/',
+    headline: 'Headline 1',
+    imgSrc: imageFile,
+  },
 };

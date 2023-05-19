@@ -1,18 +1,18 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import SnackBarProvider from '../src/components/SnackBar/SnackBarProvider';
 
-export default {
+const meta: Meta<typeof SnackBarProvider> = {
   title: 'Components/Commons/SnackBarProvider',
   component: SnackBarProvider,
   decorators: [
-    Story => (
+    Component => (
       <SnackBarProvider>
-        <Story />
+        <Component />
       </SnackBarProvider>
     ),
   ],
-} as Meta;
+};
 
 function TestSnackBarComponent() {
   // const { openSnackbar } = useSnackBar();
@@ -21,6 +21,7 @@ function TestSnackBarComponent() {
   return <button>Hallo</button>;
 }
 
-const Template: Story = () => <TestSnackBarComponent />;
+export default meta;
+type Story = StoryObj<typeof SnackBarProvider>;
 
-export const Default = Template.bind({});
+export const Default: Story = {};

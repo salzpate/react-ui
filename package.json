@@ -18,12 +18,12 @@
     "node": ">=16"
   },
   "scripts": {
-    "build-storybook": "build-storybook",
+    "build-storybook": "storybook build",
     "build": "npm run esbuild",
     "esbuild": "rm -rf dist && NODE_ENV=production node ./esbuild.mjs && tsc --emitDeclarationOnly --outDir dist",
     "lint": "eslint --ext tsx --ext ts src && tsc --noEmit",
     "test": "jest --config=jest.config.js",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "storybook dev -p 6006"
   },
   "husky": {
     "hooks": {
@@ -48,13 +48,12 @@
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@salzpate/eslint-config": "^2.0.1",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/builder-webpack5": "^6.5.16",
-    "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/react": "^6.5.16",
+    "@storybook/addon-actions": "^7.0.12",
+    "@storybook/addon-essentials": "^7.0.12",
+    "@storybook/addon-links": "^7.0.12",
+    "@storybook/addon-styling": "^1.0.8",
+    "@storybook/react": "^7.0.12",
+    "@storybook/react-webpack5": "^7.0.12",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^18.16.12",
@@ -82,7 +81,7 @@
     "postcss-preset-env": "^8.3.2",
     "prettier": "^2.8.8",
     "react-is": "^18.2.0",
-    "storybook-addon-next-router": "^4.0.2",
+    "storybook": "^7.0.12",
     "style-loader": "^3.3.2",
     "styled-components": "^6.0.0-rc.1",
     "stylelint": "^15.6.2",

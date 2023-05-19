@@ -1,34 +1,38 @@
-import React, { PropsWithChildren } from 'react';
-import { Meta, Story } from '@storybook/react';
-import Banner, { BannerProps, BannerTypes } from '../src/components/Banner/Banner';
+import { Meta, StoryObj } from '@storybook/react';
+import Banner, { BannerTypes } from '../src/components/Banner/Banner';
 
-export default {
+const meta: Meta<typeof Banner> = {
   title: 'Components/Commons/Banner',
   component: Banner,
-} as Meta;
-
-const Template: Story<PropsWithChildren<BannerProps>> = args => <Banner {...args} />;
-
-export const Info = Template.bind({});
-Info.args = {
-  type: BannerTypes.info,
-  children: 'Info Banner',
 };
 
-export const Success = Template.bind({});
-Success.args = {
-  type: BannerTypes.success,
-  children: 'Success Banner',
+export default meta;
+type Story = StoryObj<typeof Banner>;
+
+export const Info: Story = {
+  args: {
+    type: BannerTypes.info,
+    children: 'Info Banner',
+  },
 };
 
-export const Warning = Template.bind({});
-Warning.args = {
-  type: BannerTypes.warning,
-  children: 'Warning Banner',
+export const Success: Story = {
+  args: {
+    type: BannerTypes.success,
+    children: 'Success Banner',
+  },
 };
 
-export const Error = Template.bind({});
-Error.args = {
-  type: BannerTypes.error,
-  children: 'Error Banner',
+export const Warning: Story = {
+  args: {
+    type: BannerTypes.warning,
+    children: 'Warning Banner',
+  },
+};
+
+export const Error: Story = {
+  args: {
+    type: BannerTypes.error,
+    children: 'Error Banner',
+  },
 };

@@ -1,32 +1,33 @@
-import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import Footer, { FooterProps } from '../src/components/Footer/Footer/Footer';
+import { Meta, StoryObj } from '@storybook/react';
+import Footer from '../src/components/Footer/Footer/Footer';
 
-export default {
+const meta: Meta<typeof Footer> = {
   title: 'Components/Footer/Footer',
   component: Footer,
-} as Meta;
+};
 
-const Template: Story<FooterProps> = args => <Footer {...args} />;
+export default meta;
+type Story = StoryObj<typeof Footer>;
 
-export const Default = Template.bind({});
-Default.args = {
-  text: '(c) Ronny Krammer',
-  menuItems: [
-    {
-      children: 'Ausschreibung',
-      href: '/',
-      activeMenuName: 'ausschreibung',
-    },
-    {
-      children: 'Strecken',
-      href: '/',
-      activeMenuName: 'strecken',
-    },
-    {
-      children: 'Kontakt',
-      href: '/',
-      activeMenuName: 'kontakt',
-    },
-  ],
+export const Default: Story = {
+  args: {
+    text: '(c) Ronny Krammer',
+    menuItems: [
+      {
+        children: 'Ausschreibung',
+        href: '/',
+        activeMenuName: 'ausschreibung',
+      },
+      {
+        children: 'Strecken',
+        href: '/',
+        activeMenuName: 'strecken',
+      },
+      {
+        children: 'Kontakt',
+        href: '/',
+        activeMenuName: 'kontakt',
+      },
+    ],
+  },
 };

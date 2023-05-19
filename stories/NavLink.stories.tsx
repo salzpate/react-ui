@@ -1,16 +1,17 @@
-import React, { PropsWithChildren } from 'react';
-import { Meta, Story } from '@storybook/react';
-import NavLink, { NavLinkProps } from '../src/components/Header/NavLink/NavLink';
+import { Meta, StoryObj } from '@storybook/react';
+import NavLink from '../src/components/Header/NavLink/NavLink';
 
-export default {
+const meta: Meta<typeof NavLink> = {
   title: 'Components/Header/NavLink',
   component: NavLink,
-} as Meta;
+};
 
-const Template: Story<PropsWithChildren<NavLinkProps>> = args => <NavLink {...args} />;
+export default meta;
+type Story = StoryObj<typeof NavLink>;
 
-export const Default = Template.bind({});
-Default.args = {
-  href: '/',
-  children: 'Content',
+export const Default: Story = {
+  args: {
+    href: '/',
+    children: 'Content',
+  },
 };
