@@ -1,5 +1,3 @@
-import { RouterContext } from "next/dist/shared/lib/router-context";
-
 import "../src/styles/tailwind.css"
 
 // https://storybook.js.org/docs/react/writing-stories/parameters#global-parameters
