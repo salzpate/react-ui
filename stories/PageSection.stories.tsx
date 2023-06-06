@@ -4,6 +4,17 @@ import PageSection from '../src/components/PageSection/PageSection';
 const meta: Meta<typeof PageSection> = {
   title: 'Components/Commons/PageSection',
   component: PageSection,
+  argTypes: {
+    id: {
+      control: { type: 'text' },
+    },
+    className: {
+      control: { type: 'text' },
+    },
+    subSection: {
+      control: { type: 'boolean' },
+    },
+  },
 };
 
 export default meta;
