@@ -8,5 +8,5 @@ export { NavLink } from './components/Header/NavLink';
 export { HeadlineTextElement } from './components/HeadlineTextElement';
 export { MoreLink } from './components/MoreLink';
 export { PageSection } from './components/PageSection';
-export { SnackBarProvider, useSnackBar, SnackBar, SnackBarTypes } from './components/SnackBar';
-export type { SnackBarProviderProps, SnackBarContextType, SnackBarProps } from './components/SnackBar';
+export { SnackBar, SnackBarTypes } from './components/SnackBar';
+export type { SnackBarProps } from './components/SnackBar';
