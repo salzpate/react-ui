@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { PropsWithChildren, ReactNode } from 'react';
+import React, { JSX, PropsWithChildren, ReactNode } from 'react';
 
 export interface PageSectionProps {
   id: string;

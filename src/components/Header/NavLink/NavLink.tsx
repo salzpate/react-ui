@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React from 'react';
+import React, { JSX } from 'react';
 import { NavMenu } from '../../commons';
 import Link from 'next/link';
 

@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React from 'react';
+import React, { JSX } from 'react';
 
 export type ContactCardProps = {
   className?: string;
