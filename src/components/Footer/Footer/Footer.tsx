@@ -1,4 +1,4 @@
-import React, { JSX, ReactNode } from 'react';
+import { JSX, ReactNode } from 'react';
 import { NavMenuItem } from '../../commons';
 import { FooterLink } from '../FooterLink';
 
