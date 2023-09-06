@@ -9,28 +9,28 @@ const meta: Meta<typeof Banner> = {
 export default meta;
 type Story = StoryObj<typeof Banner>;
 
-export const Info: Story = {
+export const WithInfo: Story = {
   args: {
     type: BannerTypes.info,
     children: 'Info Banner',
   },
 };
 
-export const Success: Story = {
+export const WithSuccess: Story = {
   args: {
     type: BannerTypes.success,
     children: 'Success Banner',
   },
 };
 
-export const Warning: Story = {
+export const WithWarning: Story = {
   args: {
     type: BannerTypes.warning,
     children: 'Warning Banner',
   },
 };
 
-export const Error: Story = {
+export const WithError: Story = {
   args: {
     type: BannerTypes.error,
     children: 'Error Banner',

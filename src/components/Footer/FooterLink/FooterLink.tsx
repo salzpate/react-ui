@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import React, { JSX } from 'react';
 import Link from 'next/link';
 import { NavMenu } from '../../commons';
 
