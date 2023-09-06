@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": [ "esnext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -22,9 +22,10 @@
     "strict": true,
     "target": "esnext",
     "isolatedModules": true,
+    "resolveJsonModule": true,
     "types": ["node"]
   },
-  "include": ["src", "types", "typings.d.ts"],
+  "include": ["src", "types", "vite.config.ts"],
   "exclude": ["node_modules", "dist"],
 }
 

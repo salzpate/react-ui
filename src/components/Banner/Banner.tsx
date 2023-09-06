@@ -1,4 +1,4 @@
-import React, { JSX, PropsWithChildren } from 'react';
+import { JSX, PropsWithChildren } from 'react';
 import cn from 'classnames';
 
 export enum BannerTypes {
