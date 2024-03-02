@@ -1,12 +1,1 @@
-export type { ActiveMenuItem, AppMenu, NavMenuItem, NavMenu } from './components/commons';
-export { Banner, BannerTypes } from './components/Banner';
-export { ContactCard } from './components/Contact/ContactCard';
-export { DisplayMore } from './components/DisplayMore';
-export { Footer } from './components/Footer/Footer';
-export { FooterLink } from './components/Footer/FooterLink';
-export { NavLink } from './components/Header/NavLink';
-export { HeadlineTextElement } from './components/HeadlineTextElement';
-export { MoreLink } from './components/MoreLink';
-export { PageSection } from './components/PageSection';
-export { SnackBar, SnackBarTypes } from './components/SnackBar';
-export type { SnackBarProps } from './components/SnackBar';
+export * from './components';

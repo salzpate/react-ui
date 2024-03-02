@@ -1,10 +1,10 @@
-import React, { JSX } from 'react';
+import { JSX } from 'react';
 import Link from 'next/link';
 import { NavMenu } from '../../commons';
 
 export type FooterLinkProps = NavMenu;
 
-function FooterLink(props: FooterLinkProps): JSX.Element {
+function FooterLink(props: Readonly<FooterLinkProps>): JSX.Element {
   const { href, children } = props;
   return (
     <Link href={href} legacyBehavior>

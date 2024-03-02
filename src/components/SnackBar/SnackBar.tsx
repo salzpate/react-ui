@@ -1,4 +1,4 @@
-import React, { JSX } from 'react';
+import { JSX } from 'react';
 import cn from 'classnames';
 
 export enum SnackBarTypes {
@@ -15,7 +15,7 @@ export type SnackBarProps = {
   closeSnackbar: () => void;
 };
 
-function SnackBar(props: SnackBarProps): JSX.Element {
+function SnackBar(props: Readonly<SnackBarProps>): JSX.Element {
   const { text, type, closeSnackbar } = props;
 
   return (

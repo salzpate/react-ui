@@ -1,4 +1,4 @@
-import React, { JSX, ReactNode } from 'react';
+import { JSX, ReactNode } from 'react';
 import { NavMenuItem } from '../../commons';
 import { FooterLink } from '../FooterLink';
 
@@ -7,7 +7,7 @@ export interface FooterProps {
   menuItems: NavMenuItem[];
 }
 
-function Footer(props: FooterProps): JSX.Element {
+function Footer(props: Readonly<FooterProps>): JSX.Element {
   const { text, menuItems } = props;
   return (
     <footer className="bg-gray-800 w-full py-6 dark:bg-gray-900">

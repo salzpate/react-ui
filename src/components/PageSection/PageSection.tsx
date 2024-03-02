@@ -1,4 +1,4 @@
-import React, { JSX, PropsWithChildren, ReactNode } from 'react';
+import { JSX, PropsWithChildren, ReactNode } from 'react';
 
 export interface PageSectionProps {
   id: string;

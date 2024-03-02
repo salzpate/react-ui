@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { JSX } from 'react';
+import { JSX } from 'react';
 
 export type ContactCardProps = {
   className?: string;
@@ -13,7 +13,7 @@ export type ContactCardProps = {
   imageSrc: string;
 };
 
-function ContactCard(props: ContactCardProps): JSX.Element {
+function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
   const { name, position, email, emailHref, id, className = 'bg-gray-200 dark:bg-gray-900', imageSrc, phone, fax } = props;
 
   let emailSplit;
