@@ -3,7 +3,7 @@
   "description": "React UI component library built with Tailwind CSS",
   "main": "dist/react-ui.umd.js",
   "types": "dist/index.d.ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "Apache-2.0",
   "author": "Ronny Krammer",
   "repository": {
@@ -15,7 +15,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "build": "tsc && vite build",
@@ -32,7 +32,7 @@
   },
   "peerDependencies": {
     "classnames": "^2.5.1",
-    "next": "^14.0.3",
+    "next": "^14.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
