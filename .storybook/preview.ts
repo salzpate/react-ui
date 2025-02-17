@@ -1,3 +1,5 @@
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
+
 import '../styles/globals.css';
 
 export const parameters = {
@@ -9,3 +11,14 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  withThemeByDataAttribute({
+    themes: {
+      light: 'light',
+      dark: 'dark',
+    },
+    defaultTheme: 'light',
+    attributeName: 'data-mode',
+  }),
+];

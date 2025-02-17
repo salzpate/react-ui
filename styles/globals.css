@@ -13,3 +13,5 @@
 @utility spacing-14 {
   margin: 3.5rem;
 }
+
+@custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));
