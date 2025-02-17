@@ -1,12 +1,12 @@
-import { JSX, useState } from 'react';
+import { JSX, PropsWithChildren, useState } from 'react';
 
-export type DisplayMoreProps = {
-  id?: string;
+interface DisplayMoreProps {
   className?: string;
+  id?: string;
   label?: string;
 };
 
-function DisplayMore(props: React.PropsWithChildren<DisplayMoreProps>): JSX.Element {
+function DisplayMore(props: Readonly<PropsWithChildren<DisplayMoreProps>>): JSX.Element {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
   const { className, id, children, label = 'Mehr' } = props;
@@ -27,3 +27,4 @@ function DisplayMore(props: React.PropsWithChildren<DisplayMoreProps>): JSX.Elem
   );
 }
 export default DisplayMore;
+

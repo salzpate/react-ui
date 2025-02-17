@@ -2,12 +2,12 @@
 import { JSX, PropsWithChildren, ReactNode } from 'react';
 import cn from 'classnames';
 
-export type HeadlineTextElementProps = {
+interface HeadlineTextElementProps {
   headline: ReactNode;
   imgSrc?: string;
 };
 
-function HeadlineTextElement(props: PropsWithChildren<HeadlineTextElementProps>): JSX.Element {
+function HeadlineTextElement(props: Readonly<PropsWithChildren<HeadlineTextElementProps>>): JSX.Element {
   const { headline, imgSrc, children } = props;
 
   return (

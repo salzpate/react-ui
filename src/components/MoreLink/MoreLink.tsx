@@ -1,18 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import { JSX, PropsWithChildren, ReactNode } from 'react';
-import { UrlObject } from 'url';
 import cn from 'classnames';
 import Link from 'next/link';
+import { Url } from '../types/menuTypes';
 
-export type Url = string | UrlObject;
-
-export type MoreLinkProps = {
+interface MoreLinkProps {
   href: Url;
-  headline: ReactNode;
+  headline?: ReactNode;
   imgSrc?: string;
 };
 
-function MoreLink(props: PropsWithChildren<MoreLinkProps>): JSX.Element {
+function MoreLink(props: Readonly<PropsWithChildren<MoreLinkProps>>): JSX.Element {
   const { href, headline, imgSrc, children } = props;
 
   return (
@@ -22,11 +20,11 @@ function MoreLink(props: PropsWithChildren<MoreLinkProps>): JSX.Element {
           <img src={imgSrc} width="100%" className="images-dark" alt={headline as string} />
         </Link>
       )}
-      <h3 className={cn('text-gray-900 uppercase tracking-tight text-lg sm:text-xl lg:font-medium lg:text-2xl dark:text-gray-200', { 'mt-4': imgSrc })}>{headline}</h3>
+      {headline && <h3 className={cn('text-gray-900 uppercase tracking-tight text-lg sm:text-xl lg:font-medium lg:text-2xl dark:text-gray-200', { 'mt-4': imgSrc })}>{headline}</h3>}
       <div className="my-4 text-sm lg:text-base font-light lg:font-normal">{children}</div>
       <div className="my-4">
         <Link href={href} legacyBehavior>
-          <a className="inline-flex items-center gap-0 hover:gap-1">
+          <a className="inline-flex items-center text-secondary gap-0 hover:gap-1 hover:underline hover:decoration-dotted">
             <span>Weitere Informationen</span>
             <svg className="w-3 h-3 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -37,4 +35,5 @@ function MoreLink(props: PropsWithChildren<MoreLinkProps>): JSX.Element {
     </div>
   );
 }
+
 export default MoreLink;

@@ -1,8 +1,8 @@
 import { JSX, ReactNode } from 'react';
-import { NavMenuItem } from '../../commons';
+import { NavMenuItem } from '../../types';
 import { FooterLink } from '../FooterLink';
 
-export interface FooterProps {
+interface FooterProps {
   text: ReactNode;
   menuItems: NavMenuItem[];
 }

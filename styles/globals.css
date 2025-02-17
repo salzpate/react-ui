@@ -1,0 +1,15 @@
+/* stylelint-disable at-rule-no-unknown */
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffffff;
+  --color-secondary: #ff0000;
+  --text-primary: #ffffff;
+  --text-secondary: #ff0000;
+  --color-secondary-dark: #ff0000;
+  --color-header: #ffffff;
+}
+
+@utility spacing-14 {
+  margin: 3.5rem;
+}

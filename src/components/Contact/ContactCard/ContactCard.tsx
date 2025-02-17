@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { JSX } from 'react';
 
-export type ContactCardProps = {
+interface ContactCardProps {
   className?: string;
   email?: string;
   emailHref?: string;
@@ -11,7 +11,7 @@ export type ContactCardProps = {
   name: string;
   position?: string;
   imageSrc: string;
-};
+}
 
 function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
   const { name, position, email, emailHref, id, className = 'bg-gray-200 dark:bg-gray-900', imageSrc, phone, fax } = props;
@@ -30,7 +30,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
           <div className="my-2">
             <a
               href={`tel: ${phone.replace(/\s/g, '')}`}
-              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary dark:hover:bg-secondary-dark hover:bg-opacity-15"
+              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded-sm transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary/15 dark:hover:bg-secondary-dark/15"
             >
               <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -43,7 +43,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
           <div className="my-2">
             <a
               href={`tel: ${fax.replace(/\s/g, '')}`}
-              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary dark:hover:bg-secondary-dark hover:bg-opacity-15"
+              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded-sm transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary/15 dark:hover:bg-secondary-dark/15"
             >
               <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clipRule="evenodd" />
@@ -56,7 +56,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
           <div className="my-2">
             <a
               href={emailHref}
-              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary dark:hover:bg-secondary-dark hover:bg-opacity-15"
+              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-xs lowercase py-2 px-4 rounded-sm transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary/15 dark:hover:bg-secondary-dark/15"
               rel="nofollow"
             >
               <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

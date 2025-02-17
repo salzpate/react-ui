@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Banner, { BannerTypes } from '../src/components/Banner/Banner';
+import { Banner } from '../src/components/Banner';
 
 const meta: Meta<typeof Banner> = {
   title: 'Components/Commons/Banner',
@@ -11,28 +11,28 @@ type Story = StoryObj<typeof Banner>;
 
 export const WithInfo: Story = {
   args: {
-    type: BannerTypes.info,
+    type: 'info',
     children: 'Info Banner',
   },
 };
 
 export const WithSuccess: Story = {
   args: {
-    type: BannerTypes.success,
+    type: 'success',
     children: 'Success Banner',
   },
 };
 
 export const WithWarning: Story = {
   args: {
-    type: BannerTypes.warning,
+    type: 'warning',
     children: 'Warning Banner',
   },
 };
 
 export const WithError: Story = {
   args: {
-    type: BannerTypes.error,
+    type: 'error',
     children: 'Error Banner',
   },
 };

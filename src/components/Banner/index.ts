@@ -1,1 +1,2 @@
-export { default as Banner, BannerTypes } from './Banner';
+export { default as Banner } from './Banner';
+export { type BannerTypes } from './Banner';

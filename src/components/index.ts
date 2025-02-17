@@ -1,5 +1,6 @@
-export * from './commons';
+export * from './types';
 export * from './Banner';
+export * from './ButtonLink';
 export * from './Contact';
 export * from './DisplayMore';
 export * from './Footer';
