@@ -2,7 +2,7 @@
 /// <reference types="vitest" />
 
 import react from '@vitejs/plugin-react';
-import { join, resolve } from 'path';
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
