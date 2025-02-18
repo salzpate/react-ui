@@ -4,7 +4,7 @@ interface DisplayMoreProps {
   className?: string;
   id?: string;
   label?: string;
-};
+}
 
 function DisplayMore(props: Readonly<PropsWithChildren<DisplayMoreProps>>): JSX.Element {
   const [isDisplayed, setIsDisplayed] = useState(false);
@@ -12,11 +12,11 @@ function DisplayMore(props: Readonly<PropsWithChildren<DisplayMoreProps>>): JSX.
   const { className, id, children, label = 'Mehr' } = props;
   return (
     <div id={id} className={className}>
-      {isDisplayed && <div className="text-sm lg:text-base font-light lg:font-normal">{children}</div>}
+      {isDisplayed && <div className="text-sm font-light lg:text-base lg:font-normal">{children}</div>}
       {!isDisplayed && (
         <div className="mt-2 text-right">
           <button
-            className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
+            className="rounded border border-link bg-transparent px-4 py-2 text-sm tracking-wider text-link uppercase transition duration-150 ease-in-out hover:bg-link/15 dark:border-link-dark dark:text-link-dark dark:hover:bg-link-dark/15"
             onClick={(): void => setIsDisplayed(true)}
           >
             {label}
@@ -27,4 +27,3 @@ function DisplayMore(props: Readonly<PropsWithChildren<DisplayMoreProps>>): JSX.
   );
 }
 export default DisplayMore;
-

@@ -1,5 +1,8 @@
-import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+import css from "@eslint/css";
+import { tailwindSyntax } from "@eslint/css/syntax";
+
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
@@ -7,7 +10,7 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 });
 
-export default [
+const eslintConfig = [
   {
     ignores: ['!node_modules/', '/dist/**', 'postcss.config.mjs', '**/setupTests.ts'],
   },
@@ -20,7 +23,17 @@ export default [
       'react/prop-types': 'off',
       'react/jsx-uses-react': 'off',
       'react/react-in-jsx-scope': 'off',
+      '@next/next/no-html-link-for-pages': 'off',
     },
   }),
+  {
+		files: ["**/*.css"],
+		language: "css/css",
+    languageOptions: {
+			customSyntax: tailwindSyntax,
+		},
+		...css.configs.recommended,
+	},
 ];
 
+export default eslintConfig;

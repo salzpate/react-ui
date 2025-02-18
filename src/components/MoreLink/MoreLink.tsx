@@ -8,7 +8,7 @@ interface MoreLinkProps {
   href: Url;
   headline?: ReactNode;
   imgSrc?: string;
-};
+}
 
 function MoreLink(props: Readonly<PropsWithChildren<MoreLinkProps>>): JSX.Element {
   const { href, headline, imgSrc, children } = props;
@@ -20,13 +20,13 @@ function MoreLink(props: Readonly<PropsWithChildren<MoreLinkProps>>): JSX.Elemen
           <img src={imgSrc} width="100%" className="images-dark" alt={headline as string} />
         </Link>
       )}
-      {headline && <h3 className={cn('text-gray-900 uppercase tracking-tight text-lg sm:text-xl lg:font-medium lg:text-2xl dark:text-gray-200', { 'mt-4': imgSrc })}>{headline}</h3>}
-      <div className="my-4 text-sm lg:text-base font-light lg:font-normal">{children}</div>
+      {headline && <h3 className={cn('text-lg tracking-tight text-gray-900 uppercase sm:text-xl lg:text-2xl lg:font-medium dark:text-gray-200', { 'mt-4': imgSrc })}>{headline}</h3>}
+      <div className="my-4 text-sm font-light lg:text-base lg:font-normal">{children}</div>
       <div className="my-4">
         <Link href={href} legacyBehavior>
-          <a className="inline-flex items-center text-secondary gap-0 hover:gap-1 hover:underline hover:decoration-dotted">
+          <a className="inline-flex items-center gap-0 text-link hover:gap-1 hover:underline hover:decoration-dotted dark:text-link-dark">
             <span>Weitere Informationen</span>
-            <svg className="w-3 h-3 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="ml-1 h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </a>

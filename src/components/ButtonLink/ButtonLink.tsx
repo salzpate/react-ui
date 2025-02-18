@@ -13,7 +13,10 @@ function ButtonLink(props: Readonly<PropsWithChildren<ButtonLinkProps>>): JSX.El
 
   return (
     <a
-      className={cn("bg-transparent text-secondary text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded-sm transition ease-in-out duration-150 hover:bg-secondary/15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark dark:hover:text-gray-100", className)}
+      className={cn(
+        'rounded-sm border border-link bg-transparent px-4 py-2 text-sm tracking-wider text-link uppercase transition duration-150 ease-in-out hover:bg-link/15 hover:no-underline dark:border-link-dark dark:hover:bg-link-dark dark:hover:text-color-link-dark-hover',
+        className,
+      )}
       href={href}
       target={target}
       rel={target === '_blank' ? 'noreferrer' : undefined}

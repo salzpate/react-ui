@@ -22,17 +22,17 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
   }
   return (
     <div id={id} className={['overflow-hidden', className].join(' ')}>
-      <img className="w-full pb-4 images-dark" src={imageSrc} alt={name} />
-      <div className="text-center p-4">
-        <h3 className="text-gray-900 tracking-tight text-lg font-medium mb-4 sm:text-xl lg:text-2xl dark:text-gray-200">{name}</h3>
+      <img className="images-dark w-full pb-4" src={imageSrc} alt={name} />
+      <div className="p-4 text-center">
+        <h3 className="mb-4 text-lg font-medium tracking-tight text-gray-900 sm:text-xl lg:text-2xl dark:text-gray-200">{name}</h3>
         {position && <div className="text-xs">{position}</div>}
         {phone && (
           <div className="my-2">
             <a
               href={`tel: ${phone.replace(/\s/g, '')}`}
-              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded-sm transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary/15 dark:hover:bg-secondary-dark/15"
+              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-sm text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
             >
-              <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
               <span>{phone}</span>
@@ -43,9 +43,9 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
           <div className="my-2">
             <a
               href={`tel: ${fax.replace(/\s/g, '')}`}
-              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-sm lowercase py-2 px-4 rounded-sm transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary/15 dark:hover:bg-secondary-dark/15"
+              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-sm text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
             >
-              <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clipRule="evenodd" />
               </svg>
               <span>{fax}</span>
@@ -56,10 +56,10 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
           <div className="my-2">
             <a
               href={emailHref}
-              className="inline-flex items-center bg-transparent text-secondary dark:text-secondary-dark text-xs lowercase py-2 px-4 rounded-sm transition ease-in-out duration-150 button-link w-full justify-center hover:bg-secondary/15 dark:hover:bg-secondary-dark/15"
+              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-xs text-secondary lowercase transition duration-150 ease-in-out hover:bg-secondary/15 dark:text-secondary-dark dark:hover:bg-secondary-dark/15"
               rel="nofollow"
             >
-              <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>

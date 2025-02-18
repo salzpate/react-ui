@@ -4,14 +4,15 @@
 @theme {
   --color-primary: #ffffff;
   --color-secondary: #ff0000;
-  --text-primary: #ffffff;
-  --text-secondary: #ff0000;
   --color-secondary-dark: #ff0000;
   --color-header: #ffffff;
-}
-
-@utility spacing-14 {
-  margin: 3.5rem;
+  --color-link: #ff0000;
+  --color-link-dark: #ff0000;
+  --color-link-dark-hover: #f3f4f6;
+  --color-heading: #ff0000;
+  --color-heading-dark: #ff0000;
+  --color-paragraph: #101828;
+  --color-paragraph-dark: #d1d5dc;
 }
 
 @custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));

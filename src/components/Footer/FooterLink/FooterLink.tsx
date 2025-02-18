@@ -10,7 +10,7 @@ function FooterLink(props: Readonly<NavMenu>): JSX.Element {
     <Link href={href} target={target} legacyBehavior>
       <a
         target={target}
-        className="inline-flex items-center justify-center px-2 py-2 text-sm tracking-widest rounded-md text-gray-400 shadow-xs transition ease-in-out duration-150 my-2 sm:my-0 hover:bg-gray-700 dark:hover:bg-gray-800 focus:outline-hidden focus:bg-gray-600 dark:focus:bg-gray-700"
+        className="my-2 inline-flex items-center justify-center rounded-md px-2 py-2 text-sm tracking-widest text-gray-400 shadow-xs transition duration-150 ease-in-out hover:bg-gray-700 focus:bg-gray-600 focus:outline-hidden sm:my-0 dark:hover:bg-gray-800 dark:focus:bg-gray-700"
       >
         {children}
       </a>

@@ -19,22 +19,22 @@ function SnackBar(props: Readonly<SnackBarProps>): JSX.Element {
   const { text, type, closeSnackbar } = props;
 
   return (
-    <div className="fixed z-10 right-0 left-0 bottom-0 m-4">
+    <div className="fixed right-0 bottom-0 left-0 z-10 m-4">
       <div
-        className={cn('border px-4 py-3 rounded transform scale-75 text-xl', {
-          'bg-teal-100 border-teal-500 text-teal-700': type === SnackBarTypes.success,
-          'bg-red-200 border-red-400 text-red-700': type === SnackBarTypes.error,
-          'bg-blue-100 border-blue-500 text-blue-700': type === SnackBarTypes.info,
-          'bg-orange-100 border-orange-500 text-orange-700': type === SnackBarTypes.warning,
-          'bg-secondary border-secondary text-gray-200 uppercase text-center opacity-80': type === SnackBarTypes.loading,
+        className={cn('scale-75 transform rounded border px-4 py-3 text-xl', {
+          'border-teal-500 bg-teal-100 text-teal-700': type === SnackBarTypes.success,
+          'border-red-400 bg-red-200 text-red-700': type === SnackBarTypes.error,
+          'border-blue-500 bg-blue-100 text-blue-700': type === SnackBarTypes.info,
+          'border-orange-500 bg-orange-100 text-orange-700': type === SnackBarTypes.warning,
+          'border-secondary bg-secondary text-center text-gray-200 uppercase opacity-80': type === SnackBarTypes.loading,
         })}
         role="alert"
       >
         <div>{text}</div>
-        <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+        <span className="absolute top-0 right-0 bottom-0 px-4 py-3">
           <button onClick={closeSnackbar}>
             <svg
-              className={cn('fill-current h-6 w-6', {
+              className={cn('h-6 w-6 fill-current', {
                 'text-teal-700': type === SnackBarTypes.success,
                 'text-red-700': type === SnackBarTypes.error,
                 'text-blue-700': type === SnackBarTypes.info,
