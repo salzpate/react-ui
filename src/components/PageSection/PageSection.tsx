@@ -22,3 +22,4 @@ function PageSection(props: PropsWithChildren<PageSectionProps>): JSX.Element {
 }
 
 export default PageSection;
+export type { PageSectionProps };
