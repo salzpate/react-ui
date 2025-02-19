@@ -4,7 +4,6 @@ export * from './Contact';
 export * from './DataList';
 export * from './DisplayMore';
 export * from './Footer';
-export * from './Footer';
 export * from './Header';
 export * from './HeadlineTextElement';
 export * from './MoreLink';
