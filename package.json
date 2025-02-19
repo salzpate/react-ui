@@ -3,7 +3,7 @@
   "description": "React UI component library built with Tailwind CSS",
   "types": "dist/index.d.ts",
   "main": "dist/react-ui.umd.js",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "license": "Apache-2.0",
   "author": "Ronny Krammer",
   "repository": {
@@ -18,7 +18,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npx @tailwindcss/cli -i ./styles/globals.css -o ./dist/style.css --minify",
     "build-storybook": "storybook build",
     "esbuild": "rm -rf dist && NODE_ENV=production node ./esbuild.mjs && tsc --emitDeclarationOnly --outDir dist",
     "lint": "eslint src && tsc --noEmit",
@@ -53,6 +53,7 @@
     "@storybook/addon-themes": "^8.5.6",
     "@storybook/react": "^8.5.6",
     "@storybook/react-vite": "^8.5.6",
+    "@tailwindcss/cli": "^4.0.7",
     "@tailwindcss/postcss": "^4.0.7",
     "@tailwindcss/vite": "^4.0.7",
     "@testing-library/jest-dom": "^6.6.3",
