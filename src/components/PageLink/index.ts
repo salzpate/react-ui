@@ -1,1 +1,1 @@
-export { default } from './PageLink';
+export { default as PageLink } from './PageLink';
