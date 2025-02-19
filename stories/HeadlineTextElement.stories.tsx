@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
-import HeadlineTextElement from '../src/components/HeadlineTextElement/HeadlineTextElement';
 
 import imageFile from '../public/test.jpg';
+import { HeadlineTextElement } from '../src';
 
 const meta: Meta<typeof HeadlineTextElement> = {
   title: 'Components/Commons/HeadlineTextElement',

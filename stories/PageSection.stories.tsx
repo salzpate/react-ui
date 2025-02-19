@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import PageSection from '../src/components/PageSection/PageSection';
+import { PageSection } from '../src';
 
 const meta: Meta<typeof PageSection> = {
   title: 'Components/Commons/PageSection',

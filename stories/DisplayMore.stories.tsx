@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import DisplayMore from '../src/components/DisplayMore/DisplayMore';
+import { DisplayMore } from '../src';
 
 const meta: Meta<typeof DisplayMore> = {
   title: 'Components/Commons/DisplayMore',

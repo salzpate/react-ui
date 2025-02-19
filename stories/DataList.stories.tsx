@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import DataList from '../src/components/DataList';
+import { DataList } from '../src';
 
 const meta: Meta<typeof DataList> = {
   title: 'Components/Commons/DataList',

@@ -1,12 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react';
-import ContactCard from '../src/components/Contact/ContactCard/ContactCard';
+import { ContactCard } from '../src';
+import imageFile from '../public/test.jpg';
 
 const meta: Meta<typeof ContactCard> = {
   title: 'Components/Contact/ContactCard',
   component: ContactCard,
 };
-
-import imageFile from '../public/test.jpg';
 
 export default meta;
 type Story = StoryObj<typeof ContactCard>;
