@@ -15,7 +15,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src', 'index.ts'),
       name: '@salzpate/react-ui',
-      formats: ['es'],
+      formats: ['es', 'umd'],
       fileName: 'react-ui',
     },
     rollupOptions: {
