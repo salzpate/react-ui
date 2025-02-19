@@ -6,7 +6,6 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import tailwindcss from '@tailwindcss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -34,7 +33,6 @@ export default defineConfig({
   plugins: [
     react(),
     tsconfigPaths(),
-    tailwindcss(),
     dts({
       include: 'src',
       exclude: ['node_modules', 'dist', 'vite.config.mts', '**/*.test.ts(x)', 'src/test', 'src/config/test', 'stories', '.storybook'],
