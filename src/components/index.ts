@@ -9,7 +9,6 @@ export * from './Header';
 export * from './HeadlineTextElement';
 export * from './MoreLink';
 export * from './PageLink';
-export * from './PageLink';
 export * from './PageSection';
 export * from './SnackBar';
 export * from './types';
