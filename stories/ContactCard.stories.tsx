@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { ContactCard } from '../src';
+import ContactCard from '../src/components/Contact/ContactCard/ContactCard';
 import imageFile from '../public/test.jpg';
 
 const meta: Meta<typeof ContactCard> = {

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { FooterLink } from '../src';
+import FooterLink from '../src/components/Footer/FooterLink/FooterLink';
 
 const meta: Meta<typeof FooterLink> = {
   title: 'Components/Footer/FooterLink',

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { SnackBar, SnackBarTypes } from '../src';
+import SnackBar, { SnackBarTypes } from '../src/components/SnackBar/SnackBar';
 
 const meta: Meta<typeof SnackBar> = {
   title: 'Components/Commons/SnackBar',
@@ -14,35 +14,35 @@ const meta: Meta<typeof SnackBar> = {
 export default meta;
 type Story = StoryObj<typeof SnackBar>;
 
-export const Info: Story = {
+export const AsInfo: Story = {
   args: {
     text: 'Info Text',
     type: SnackBarTypes.info,
   },
 };
 
-export const Error: Story = {
+export const AsError: Story = {
   args: {
     text: 'Error Text',
     type: SnackBarTypes.error,
   },
 };
 
-export const Loading: Story = {
+export const AsLoading: Story = {
   args: {
     text: 'Loading Text',
     type: SnackBarTypes.loading,
   },
 };
 
-export const Success: Story = {
+export const AsSuccess: Story = {
   args: {
     text: 'Success Text',
     type: SnackBarTypes.success,
   },
 };
 
-export const Warning: Story = {
+export const AsWarning: Story = {
   args: {
     text: 'Warning Text',
     type: SnackBarTypes.warning,

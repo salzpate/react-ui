@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { ButtonLink } from '../src';
+import ButtonLink from '../src/components/ButtonLink/ButtonLink';
 
 const meta: Meta<typeof ButtonLink> = {
   title: 'Components/Commons/ButtonLink',

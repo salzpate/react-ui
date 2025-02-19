@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { PageLink } from '../src';
+import PageLink from '../src/components/PageLink/PageLink';
 
 const meta: Meta<typeof PageLink> = {
   title: 'Components/Commons/PageLink',

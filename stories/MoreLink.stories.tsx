@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { MoreLink } from '../src';
+import MoreLink from '../src/components/MoreLink/MoreLink';
 import imageFile from '../public/test.jpg';
 
 const meta: Meta<typeof MoreLink> = {
