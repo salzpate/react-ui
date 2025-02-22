@@ -1,8 +1,7 @@
 import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
-import css from "@eslint/css";
-import { tailwindSyntax } from "@eslint/css/syntax";
-
+import css from '@eslint/css';
+import { tailwindSyntax } from '@eslint/css/syntax';
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
@@ -27,13 +26,13 @@ const eslintConfig = [
     },
   }),
   {
-		files: ["**/*.css"],
-		language: "css/css",
+    files: ['**/*.css'],
+    language: 'css/css',
     languageOptions: {
-			customSyntax: tailwindSyntax,
-		},
-		...css.configs.recommended,
-	},
+      customSyntax: tailwindSyntax,
+    },
+    ...css.configs.recommended,
+  },
 ];
 
 export default eslintConfig;

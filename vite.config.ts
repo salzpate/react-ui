@@ -21,7 +21,7 @@ export default defineConfig({
       external: ['react', 'react-dom'],
       output: {
         globals: {
-          'classnames': 'classnames',
+          classnames: 'classnames',
           'react-hook-form': 'ReactHookForm',
           'react-dom': 'ReactDOM',
           react: 'React',
@@ -47,13 +47,7 @@ export default defineConfig({
       reporter: ['text', 'lcov'],
       reportsDirectory: './artifacts/coverage',
       include: ['src'],
-      exclude: [
-        'src/**/index.ts',
-        'src/test/**/*',
-        'src/types/index.d.ts',
-        'stories/**/*',
-        '.eslintrc.cjs ',
-      ],
+      exclude: ['src/**/index.ts', 'src/test/**/*', 'src/types/index.d.ts', 'stories/**/*', '.eslintrc.cjs '],
     },
   },
 });

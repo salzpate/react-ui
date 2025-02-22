@@ -14,11 +14,11 @@ interface ActiveMenuItem {
   activeMenu?: string;
 }
 
-interface NavMenu extends NavMenuItem, ActiveMenuItem { }
+interface NavMenu extends NavMenuItem, ActiveMenuItem {}
 
 interface AppMenu {
   main: NavMenuItem[];
   footer: NavMenuItem[];
 }
 
-export type { Url, NavMenuItem, ActiveMenuItem, NavMenu, AppMenu }
+export type { Url, NavMenuItem, ActiveMenuItem, NavMenu, AppMenu };

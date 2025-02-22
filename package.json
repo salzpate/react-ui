@@ -11,9 +11,7 @@
     "url": "https://github.com/salzpate/react-ui.git"
   },
   "module": "dist/react-ui.mjs",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "engines": {
     "node": ">=22"
   },
@@ -23,7 +21,7 @@
     "esbuild": "rm -rf dist && NODE_ENV=production node ./esbuild.mjs && tsc --emitDeclarationOnly --outDir dist",
     "lint": "eslint src && tsc --noEmit",
     "lint:style": "npx stylelint '**/*.css' --fix",
-    "prettier": "npx prettier --write **/**/*.tsx",
+    "prettier": "npx prettier --write .",
     "storybook": "storybook dev -p 6006",
     "test": "vitest"
   },
