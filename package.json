@@ -3,7 +3,7 @@
   "description": "React UI component library built with Tailwind CSS",
   "types": "dist/index.d.ts",
   "main": "dist/react-ui.umd.js",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "Apache-2.0",
   "author": "Ronny Krammer",
   "repository": {

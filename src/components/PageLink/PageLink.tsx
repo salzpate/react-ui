@@ -6,7 +6,7 @@ function PageLink(props: Readonly<DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnc
   const { children, className, ...rest } = props;
 
   return (
-    <a className={cn('text-link hover:underline hover:decoration-dotted', className)} {...rest}>
+    <a className={cn('text-link hover:underline hover:decoration-dotted dark:text-link-dark dark:hover:text-link-dark-hover', className)} {...rest}>
       {children}
     </a>
   );
