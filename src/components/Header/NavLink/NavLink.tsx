@@ -11,8 +11,8 @@ const navLinkActiveClassName =
 function NavLink(props: Readonly<NavMenu>): JSX.Element {
   const { href, children, activeMenu, activeMenuName } = props;
   return (
-    <Link href={href} legacyBehavior>
-      <a className={activeMenuName && activeMenu && activeMenu === activeMenuName ? navLinkActiveClassName : navLinkClassName}>{children}</a>
+    <Link href={href} className={activeMenuName && activeMenu && activeMenu === activeMenuName ? navLinkActiveClassName : navLinkClassName}>
+      {children}
     </Link>
   );
 }
