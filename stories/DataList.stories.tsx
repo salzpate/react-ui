@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import DataList from '../src/components/DataList/DataList';
 
 const meta: Meta<typeof DataList> = {
@@ -15,3 +15,4 @@ export const Default: Story = {
     children: 'Content',
   },
 };
+

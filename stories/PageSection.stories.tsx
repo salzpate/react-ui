@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import PageSection from '../src/components/PageSection/PageSection';
 
 const meta: Meta<typeof PageSection> = {
@@ -15,7 +15,7 @@ const meta: Meta<typeof PageSection> = {
       control: { type: 'boolean' },
     },
   },
-};
+} satisfies Meta<typeof PageSection>;
 
 export default meta;
 type Story = StoryObj<typeof PageSection>;

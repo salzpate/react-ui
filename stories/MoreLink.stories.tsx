@@ -1,11 +1,11 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import MoreLink from '../src/components/MoreLink/MoreLink';
 import imageFile from '../public/test.jpg';
 
 const meta: Meta<typeof MoreLink> = {
   title: 'Components/Commons/MoreLink',
   component: MoreLink,
-};
+} satisfies Meta<typeof MoreLink>;
 
 export default meta;
 type Story = StoryObj<typeof MoreLink>;

@@ -1,10 +1,10 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import DisplayMore from '../src/components/DisplayMore/DisplayMore';
 
 const meta: Meta<typeof DisplayMore> = {
   title: 'Components/Commons/DisplayMore',
   component: DisplayMore,
-};
+} satisfies Meta<typeof DisplayMore>;
 
 export default meta;
 type Story = StoryObj<typeof DisplayMore>;

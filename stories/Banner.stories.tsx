@@ -1,10 +1,10 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import Banner from '../src/components/Banner/Banner';
 
 const meta: Meta<typeof Banner> = {
   title: 'Components/Commons/Banner',
   component: Banner,
-};
+} satisfies Meta<typeof Banner>;
 
 export default meta;
 type Story = StoryObj<typeof Banner>;

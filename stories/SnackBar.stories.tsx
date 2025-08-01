@@ -1,7 +1,7 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import SnackBar, { SnackBarTypes } from '../src/components/SnackBar/SnackBar';
 
-const meta: Meta<typeof SnackBar> = {
+const meta = {
   title: 'Components/Commons/SnackBar',
   component: SnackBar,
   argTypes: {
@@ -9,7 +9,7 @@ const meta: Meta<typeof SnackBar> = {
       action: 'Close SnackBar clicked',
     },
   },
-};
+} satisfies Meta<typeof SnackBar>;
 
 export default meta;
 type Story = StoryObj<typeof SnackBar>;

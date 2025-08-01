@@ -1,24 +1,21 @@
-import { withThemeByDataAttribute } from '@storybook/addon-themes';
+import type { Preview } from '@storybook/nextjs-vite';
 
 import '../styles/globals.css';
 
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+const preview: Preview = {
+  parameters: {
+    actions: { argTypesRegex: '^on.*' },
+    backgrounds: {
+      options: {
+        dark: { name: 'Dark', value: '#333' },
+        light: { name: 'Light', value: '#F7F9F2' },
+      },
     },
   },
+  initialGlobals: {
+    backgrounds: { value: 'light' },
+  },
+  tags: ['autodocs'],
 };
 
-export const decorators = [
-  withThemeByDataAttribute({
-    themes: {
-      light: 'light',
-      dark: 'dark',
-    },
-    defaultTheme: 'light',
-    attributeName: 'data-mode',
-  }),
-];
+export default preview

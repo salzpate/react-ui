@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import ContactCard from '../src/components/Contact/ContactCard/ContactCard';
 import imageFile from '../public/test.jpg';
 
