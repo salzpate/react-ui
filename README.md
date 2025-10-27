@@ -1,6 +1,6 @@
 # @salzpate React UI
 
-React UI component library built with Tailwind CSS.
+React UI component library built with Tailwind CSS and Next.js 16
 
 ## Getting Started
 
