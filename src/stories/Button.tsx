@@ -29,11 +29,13 @@ export const Button = ({
       {...props}
     >
       {label}
-      <style jsx>{`
-        button {
-          background-color: ${backgroundColor};
-        }
-      `}</style>
+      {backgroundColor && (
+        <style>{`
+          button {
+            background-color: ${backgroundColor} !important;
+          }
+        `}</style>
+      )}
     </button>
   );
 };
