@@ -44,7 +44,6 @@
     "react-hook-form": "^7.65.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.38.0",
     "@storybook/addon-docs": "^9.1.15",
     "@storybook/nextjs": "^9.1.15",
@@ -91,7 +90,7 @@
     "vitest": "^4.0.4"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.52.5",
-    "@parcel/watcher-linux-x64-glibc": "^2.5.1"
+    "@parcel/watcher-linux-x64-glibc": "^2.5.1",
+    "@rollup/rollup-linux-x64-gnu": "^4.52.5"
   }
 }
