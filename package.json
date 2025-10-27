@@ -91,6 +91,7 @@
     "vitest": "^4.0.4"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.52.5"
+    "@rollup/rollup-linux-x64-gnu": "^4.52.5",
+    "@parcel/watcher-linux-x64-glibc": "^2.5.1"
   }
 }
