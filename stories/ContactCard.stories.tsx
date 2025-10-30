@@ -26,6 +26,8 @@ export const Full: Story = {
     fax: '0000/00000',
     id: 'contactId',
     name: 'Contact Name',
+    street: 'Street',
+    town: 'Town',
     position: 'Position',
     imageSrc: imageFile,
   },

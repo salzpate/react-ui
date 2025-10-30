@@ -11,10 +11,12 @@ interface ContactCardProps {
   name: string;
   position?: string;
   imageSrc: string;
+  street?: string;
+  town?: string;
 }
 
 function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
-  const { name, position, email, emailHref, id, className = 'bg-gray-200 dark:bg-gray-900', imageSrc, phone, fax } = props;
+  const { name, position, email, emailHref, id, className = 'bg-gray-200 dark:bg-gray-900', imageSrc, phone, fax, street, town } = props;
 
   let emailSplit;
   if (email) {
@@ -26,11 +28,15 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
       <div className="p-4 text-center">
         <h3 className="mb-4 text-lg font-medium tracking-tight text-gray-900 sm:text-xl lg:text-2xl dark:text-gray-200">{name}</h3>
         {position && <div className="text-xs">{position}</div>}
+        {(street || town) && (<div className="text-xs mt-4">
+          {street && <div>{street}</div>}
+          {town && <div>{town}</div>}
+          </div>)}
         {phone && (
           <div className="my-2">
             <a
               href={`tel: ${phone.replace(/\s/g, '')}`}
-              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-sm text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
+              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-xs text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
             >
               <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -43,7 +49,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
           <div className="my-2">
             <a
               href={`tel: ${fax.replace(/\s/g, '')}`}
-              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-sm text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
+              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-xs text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
             >
               <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clipRule="evenodd" />
