@@ -7,11 +7,12 @@ import { Url } from '../types/menuTypes';
 interface MoreLinkProps {
   href: Url;
   headline?: ReactNode;
+  linkText?: string;
   imgSrc?: string;
 }
 
 function MoreLink(props: Readonly<PropsWithChildren<MoreLinkProps>>): JSX.Element {
-  const { href, headline, imgSrc, children } = props;
+  const { href, headline, imgSrc, linkText = 'Weitere Informationen', children } = props;
 
   return (
     <div>
@@ -24,7 +25,7 @@ function MoreLink(props: Readonly<PropsWithChildren<MoreLinkProps>>): JSX.Elemen
       <div className="my-4 text-sm font-light lg:text-base lg:font-normal">{children}</div>
       <div className="my-4">
         <Link href={href} className="inline-flex items-center gap-0 text-link hover:gap-1 hover:underline hover:decoration-dotted dark:text-link-dark dark:hover:text-link-dark-hover">
-          <span>Weitere Informationen</span>
+          <span>{linkText}</span>
           <svg className="ml-1 h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
