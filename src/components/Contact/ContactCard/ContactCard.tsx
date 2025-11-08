@@ -28,10 +28,12 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
       <div className="p-4 text-center">
         <h3 className="mb-4 text-lg font-medium tracking-tight text-gray-900 sm:text-xl lg:text-2xl dark:text-gray-200">{name}</h3>
         {position && <div className="text-xs">{position}</div>}
-        {(street || town) && (<div className="text-xs mt-4">
-          {street && <div>{street}</div>}
-          {town && <div>{town}</div>}
-          </div>)}
+        {(street || town) && (
+          <div className="mt-4 text-xs">
+            {street && <div>{street}</div>}
+            {town && <div>{town}</div>}
+          </div>
+        )}
         {phone && (
           <div className="my-2">
             <a

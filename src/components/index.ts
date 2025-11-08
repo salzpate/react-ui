@@ -7,6 +7,7 @@ export * from './Footer';
 export * from './Header';
 export * from './HeadlineTextElement';
 export * from './MoreLink';
+export * from './OpenPageLink';
 export * from './PageLink';
 export * from './PageSection';
 export * from './SnackBar';

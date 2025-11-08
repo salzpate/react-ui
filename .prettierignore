@@ -30,6 +30,8 @@ LICENSE
 **/*.xml
 **/*.txt
 **/*.css
+**/*.png
+**/*.avif
 public/**
 out/**
 
