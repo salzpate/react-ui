@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { JSX } from 'react';
+import cn from 'classnames';
 
 interface ContactCardProps {
   className?: string;
@@ -13,6 +14,7 @@ interface ContactCardProps {
   imageSrc: string;
   street?: string;
   town?: string;
+  imageClassName?: string;
 }
 
 function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
@@ -24,7 +26,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
   }
   return (
     <div id={id} className={['overflow-hidden', className].join(' ')}>
-      <img className="images-dark w-full pb-4" src={imageSrc} alt={name} />
+      <img className={cn('images-dark w-full pb-4', className)} src={imageSrc} alt={name} />
       <div className="p-4 text-center">
         <h3 className="mb-4 text-lg font-medium tracking-tight text-gray-900 sm:text-xl lg:text-2xl dark:text-gray-200">{name}</h3>
         {position && <div className="text-xs">{position}</div>}
