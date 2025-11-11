@@ -39,7 +39,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
         {phone && (
           <div className="my-2">
             <a
-              href={`tel: ${phone.replace(/\s/g, '')}`}
+              href={`tel:${phone.replace(/\s/g, '')}`}
               className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-xs text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
             >
               <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -52,7 +52,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
         {fax && (
           <div className="my-2">
             <a
-              href={`tel: ${fax.replace(/\s/g, '')}`}
+              href={`tel:${fax.replace(/\s/g, '')}`}
               className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-xs text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
             >
               <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -66,7 +66,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
           <div className="my-2">
             <a
               href={emailHref}
-              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-xs text-secondary lowercase transition duration-150 ease-in-out hover:bg-secondary/15 dark:text-secondary-dark dark:hover:bg-secondary-dark/15"
+              className="button-link inline-flex w-full items-center justify-center rounded-sm bg-transparent px-4 py-2 text-xs text-link lowercase transition duration-150 ease-in-out hover:bg-link/15 dark:text-link-dark dark:hover:bg-link-dark/15"
               rel="nofollow"
             >
               <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
