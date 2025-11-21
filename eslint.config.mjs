@@ -5,7 +5,7 @@ import nextTs from 'eslint-config-next/typescript';
 import prettier from 'eslint-plugin-prettier/recommended';
 
 const eslintConfig = defineConfig([
-  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts', '!node_modules/', '/dist/**', 'postcss.config.mjs', '**/setupTests.ts']),
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts', 'node_modules/', '/dist/**', 'postcss.config.mjs', '**/setupTests.ts']),
   ...nextVitals,
   ...nextTs,
   ...storybook.configs['flat/recommended'],
