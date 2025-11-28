@@ -40,6 +40,7 @@ export default defineConfig({
   ],
   test: {
     globals: true,
+    environment: 'jsdom',
     setupFiles: './src/config/test/setupTests.ts',
     restoreMocks: true,
 
@@ -47,7 +48,7 @@ export default defineConfig({
       reporter: ['text', 'lcov'],
       reportsDirectory: './artifacts/coverage',
       include: ['src'],
-      exclude: ['src/**/index.ts', 'src/test/**/*', 'src/types/index.d.ts', 'stories/**/*', '.eslintrc.cjs '],
+      exclude: ['src/**/index.ts', 'src/test/**/*', 'src/types/**/*', 'src/components/types/**/*', 'stories/**/*', '.eslintrc.cjs '],
     },
   },
 });
