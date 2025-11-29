@@ -21,4 +21,4 @@
   visibility: hidden;
 }
 
-@custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));
+@custom-variant dark (&:where(.dark, .dark *));
