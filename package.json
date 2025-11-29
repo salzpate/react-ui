@@ -12,6 +12,14 @@
   },
   "module": "dist/react-ui.mjs",
   "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/react-ui.mjs",
+      "require": "./dist/react-ui.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
   "engines": {
     "node": ">=22"
   },
