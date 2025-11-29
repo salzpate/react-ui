@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import { JSX } from 'react';
 
-import Link from 'next/link';
 import { NavMenu } from '../../types';
 
 function FooterLink(props: Readonly<Omit<NavMenu, 'id'>>): JSX.Element {

@@ -16,7 +16,7 @@ function DisplayMore(props: Readonly<PropsWithChildren<DisplayMoreProps>>): JSX.
       {!isDisplayed && (
         <div className="mt-2 text-right">
           <button
-            className="cursor-pointer rounded border border-link bg-transparent px-4 py-2 text-sm tracking-wider text-link uppercase transition duration-150 ease-in-out hover:bg-link/15 dark:border-link-dark dark:text-link-dark dark:hover:bg-link-dark/15"
+            className="border-link text-link hover:bg-link/15 dark:border-link-dark dark:text-link-dark dark:hover:bg-link-dark/15 cursor-pointer rounded border bg-transparent px-4 py-2 text-sm tracking-wider uppercase transition duration-150 ease-in-out"
             onClick={(): void => setIsDisplayed(true)}
           >
             {label}

@@ -1,1 +1,1 @@
-export type { ActiveMenuItem, AppMenu, NavMenuItem, NavMenu } from './menuTypes';
+export type { ActiveMenuItem, AppMenu, NavMenu, NavMenuItem } from './menuTypes';

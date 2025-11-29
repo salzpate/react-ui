@@ -1,4 +1,5 @@
 import { JSX, ReactNode } from 'react';
+
 import { NavMenuItem } from '../../types';
 import { FooterLink } from '../FooterLink';
 

@@ -1,6 +1,6 @@
+import { CheckCircleIcon, ExclamationTriangleIcon, InformationCircleIcon, XCircleIcon } from '@heroicons/react/24/solid';
 import { JSX, PropsWithChildren } from 'react';
 
-import { CheckCircleIcon, ExclamationTriangleIcon, InformationCircleIcon, XCircleIcon } from '@heroicons/react/24/solid';
 import { cn } from '../../utils';
 
 type BannerTypes = 'error' | 'info' | 'success' | 'warning';

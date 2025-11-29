@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { JSX, PropsWithChildren, ReactNode } from 'react';
-import { cn } from '../../utils';
 import Link from 'next/link';
-import { Url } from '../types/menuTypes';
+import { JSX, PropsWithChildren, ReactNode } from 'react';
+
+import { cn } from '../../utils';
 import { OpenPageLink } from '../OpenPageLink';
+import { Url } from '../types/menuTypes';
 
 interface MoreLinkProps {
   href: Url;

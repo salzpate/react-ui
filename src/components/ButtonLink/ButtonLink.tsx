@@ -14,7 +14,7 @@ function ButtonLink(props: Readonly<PropsWithChildren<ButtonLinkProps>>): JSX.El
   return (
     <a
       className={cn(
-        'rounded-sm border border-link bg-transparent px-4 py-2 text-sm tracking-wider text-link uppercase transition duration-150 ease-in-out hover:bg-link/15 hover:no-underline dark:border-link-dark dark:hover:bg-link-dark dark:hover:text-link-dark-hover',
+        'border-link text-link hover:bg-link/15 dark:border-link-dark dark:hover:bg-link-dark dark:hover:text-link-dark-hover rounded-sm border bg-transparent px-4 py-2 text-sm tracking-wider uppercase transition duration-150 ease-in-out hover:no-underline',
         className,
       )}
       href={href}
