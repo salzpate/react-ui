@@ -11,7 +11,9 @@
     "url": "https://github.com/salzpate/react-ui.git"
   },
   "module": "dist/react-ui.mjs",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/react-ui.mjs",
@@ -65,7 +67,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/eslint__js": "^9.14.0",
-    "@types/node": "^22.19.1",
+    "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
