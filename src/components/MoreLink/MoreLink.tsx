@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { JSX, PropsWithChildren, ReactNode } from 'react';
-import cn from 'classnames';
+import { cn } from '../../utils';
 import Link from 'next/link';
 import { Url } from '../types/menuTypes';
 import { OpenPageLink } from '../OpenPageLink';

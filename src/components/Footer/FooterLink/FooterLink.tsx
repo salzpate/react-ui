@@ -3,7 +3,7 @@ import { JSX } from 'react';
 import Link from 'next/link';
 import { NavMenu } from '../../types';
 
-function FooterLink(props: Readonly<NavMenu>): JSX.Element {
+function FooterLink(props: Readonly<Omit<NavMenu, 'id'>>): JSX.Element {
   const { href, children, target } = props;
 
   return (

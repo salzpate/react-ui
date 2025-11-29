@@ -1,5 +1,4 @@
-/* stylelint-disable at-rule-no-unknown */
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-primary: #ffffff;

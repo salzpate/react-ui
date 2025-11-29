@@ -19,7 +19,7 @@ function Footer(props: Readonly<FooterProps>): JSX.Element {
           <div className="order-1 flex flex-col md:grow md:flex-row md:items-stretch md:justify-end">
             {menuItems.map((item, i) => {
               return (
-                <span key={'footer' + i} className="text-center md:text-left">
+                <span key={`footer-item-${item.id}`} className="text-center md:text-left">
                   {i > 0 && <span className="mx-1 hidden text-gray-600 md:inline">|</span>}
                   <FooterLink href={item.href}>{item.children}</FooterLink>
                 </span>

@@ -17,8 +17,9 @@
 
 ### Wichtige Dependencies
 
-- `classnames`: CSS-Klassen-Verwaltung
-- `lucide-react`: Icon-Bibliothek
+- `clsx`: CSS-Klassen-Verwaltung (modern und performant, ~200 bytes)
+- `tailwind-merge`: Intelligente Tailwind-Klassen-Konfliktauflösung
+- `@heroicons/react`: Icon-Bibliothek (von Tailwind Labs)
 - `react-hook-form`: Formular-Verwaltung
 
 ### Test-Framework
@@ -103,7 +104,9 @@ npm run test               # Vitest Tests ausführen
 ### Styling-Konventionen
 
 - Tailwind CSS für alle Styles
-- `cn()` Funktion für bedingte Klassen (tailwind-merge)
+- `cn()` Utility-Funktion für bedingte Klassen (kombiniert `clsx` + `tailwind-merge`)
+- `clsx`: Performant (~200 bytes), bedingte Klassen
+- `tailwind-merge`: Intelligente Konfliktauflösung für Tailwind-Klassen
 - Globale Styles in `./styles/globals.css`
 
 ## Build-Konfiguration
@@ -173,7 +176,7 @@ npm run test               # Vitest Tests ausführen
 
 - **Framework**: Vitest mit jsdom
 - **Setup-Datei**: `src/config/test/setupTests.ts`
-- **Coverage**: Text + LCOV Reports in `./artifacts/coverage`
+- **Coverage**: Text + LCOV Reports in `./coverage`
 
 ### Test-Konventionen
 
@@ -208,7 +211,6 @@ Beim Verwenden dieser Bibliothek müssen folgende Packages installiert sein:
 - `react`: ^19.2.0
 - `react-dom`: ^19.2.0
 - `next`: ^16.0.0
-- `classnames`: ^2.5.1
 
 ## Node.js Version
 

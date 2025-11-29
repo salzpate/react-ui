@@ -5,7 +5,7 @@ import nextTs from 'eslint-config-next/typescript';
 import prettier from 'eslint-plugin-prettier/recommended';
 
 const eslintConfig = defineConfig([
-  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts', 'node_modules/', '/dist/**', 'postcss.config.mjs', '**/setupTests.ts']),
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'dist/**', 'coverage/**', 'test-results/**', 'storybook-static/**', 'node_modules/**', 'next-env.d.ts', 'postcss.config.mjs', '**/setupTests.ts']),
   ...nextVitals,
   ...nextTs,
   ...storybook.configs['flat/recommended'],
@@ -14,8 +14,6 @@ const eslintConfig = defineConfig([
     rules: {
       'import/extensions': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
-      'react/jsx-filename-extension': ['warn', { extensions: ['.ts', '.tsx'] }],
-      'react/jsx-uses-react': 'off',
       '@next/next/no-html-link-for-pages': 'off',
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'warn',

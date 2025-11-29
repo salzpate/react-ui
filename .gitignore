@@ -6,4 +6,7 @@ dist
 
 *storybook.log
 storybook-static
-artifacts
+
+# Test outputs
+coverage
+test-results

@@ -14,16 +14,19 @@ export const Default: Story = {
     text: '(c) Ronny Krammer',
     menuItems: [
       {
+        id: 'ausschreibung',
         children: 'Ausschreibung',
         href: '/',
         activeMenuName: 'ausschreibung',
       },
       {
+        id: 'strecken',
         children: 'Strecken',
         href: '/',
         activeMenuName: 'strecken',
       },
       {
+        id: 'kontakt',
         children: 'Kontakt',
         href: '/',
         activeMenuName: 'kontakt',

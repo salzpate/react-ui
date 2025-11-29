@@ -1,6 +1,6 @@
 import { JSX, PropsWithChildren } from 'react';
 
-import cn from 'classnames';
+import { cn } from '../../utils';
 
 interface ButtonLinkProps {
   href?: string;

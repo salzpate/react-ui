@@ -1,7 +1,7 @@
 import { JSX, PropsWithChildren } from 'react';
 
-import cn from 'classnames';
-import { CircleCheck, CircleX, Info, TriangleAlert } from 'lucide-react';
+import { CheckCircleIcon, ExclamationTriangleIcon, InformationCircleIcon, XCircleIcon } from '@heroicons/react/24/solid';
+import { cn } from '../../utils';
 
 type BannerTypes = 'error' | 'info' | 'success' | 'warning';
 interface BannerProps {
@@ -24,10 +24,10 @@ function Banner(props: Readonly<PropsWithChildren<BannerProps>>): JSX.Element {
       <div className="flex flex-wrap items-center justify-between">
         <div className="flex w-0 flex-1 items-center">
           <span className="flex p-2">
-            {type === 'error' && <CircleX className="h-4 w-4 text-red-700" />}
-            {type === 'info' && <Info className="h-4 w-4 text-blue-700" />}
-            {type === 'success' && <CircleCheck className="h-4 w-4 text-teal-700" />}
-            {type === 'warning' && <TriangleAlert className="h-4 w-4 text-orange-700" />}
+            {type === 'error' && <XCircleIcon className="h-4 w-4 text-red-700" />}
+            {type === 'info' && <InformationCircleIcon className="h-4 w-4 text-blue-700" />}
+            {type === 'success' && <CheckCircleIcon className="h-4 w-4 text-teal-700" />}
+            {type === 'warning' && <ExclamationTriangleIcon className="h-4 w-4 text-orange-700" />}
           </span>
           <p className="ml-3">{children}</p>
         </div>

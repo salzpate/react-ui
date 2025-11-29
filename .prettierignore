@@ -1,40 +1,32 @@
-**/tests/fixtures/**/*
-!packages/scope-manager/tests/fixtures/**/*
-**/tests/fixture-project/**/*
-**/dist
-**/nyc_output
-**/coverage
-**/shared-fixtures
-**/.vscode
-**/.nyc_output
-**/.vs
-packages/eslint-plugin-tslint/tests/test-tslint-rules-directory/alwaysFailRule.js
-.github
-packages/eslint-plugin/src/configs/*.json
-.all-contributorsrc
-CONTRIBUTORS.md
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+.next
+storybook-static
+
+# Test outputs
+coverage
+test-results
+
+# Logs
+*.log
+
+# Lock files
 package-lock.json
 
-# Ignore CHANGELOG.md files to avoid issues with automated release job
-CHANGELOG.md
-SECURITY.md
-README.md
-LICENSE
-**/.env
-**/.npmrc
-**/.editorconfig
-**/.gitignore
-**/.prettierignore
-**/.stylelintignore
-**/.next
-**/*.xml
-**/*.txt
-**/*.css
-**/*.png
-**/*.avif
-public/**
-out/**
+# Config files that should not be formatted
+.env
+.npmrc
 
-# TODO - remove this once prettier supports labelled tuples
-packages/scope-manager/tests/fixtures/type-declaration/tuple-labelled.ts
-packages/scope-manager/tests/fixtures/type-declaration/tuple-labelled-rest.ts
+# Assets
+public/**
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.avif
+*.webp

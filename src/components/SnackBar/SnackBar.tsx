@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import cn from 'classnames';
+import { cn } from '../../utils';
 
 export enum SnackBarTypes {
   error = 'error',

@@ -4,9 +4,9 @@ import Footer from './Footer';
 
 describe('Footer', () => {
   const mockMenuItems = [
-    { href: '/impressum', children: 'Impressum', activeMenu: 'impressum' },
-    { href: '/datenschutz', children: 'Datenschutz', activeMenu: 'datenschutz' },
-    { href: '/kontakt', children: 'Kontakt', activeMenu: 'kontakt' },
+    { id: 'impressum', href: '/impressum', children: 'Impressum', activeMenu: 'impressum' },
+    { id: 'datenschutz', href: '/datenschutz', children: 'Datenschutz', activeMenu: 'datenschutz' },
+    { id: 'kontakt', href: '/kontakt', children: 'Kontakt', activeMenu: 'kontakt' },
   ];
 
   it('renders text content', () => {

@@ -1,6 +1,6 @@
 import { AnchorHTMLAttributes, DetailedHTMLProps, JSX } from 'react';
 
-import cn from 'classnames';
+import { cn } from '../../utils';
 
 function PageLink(props: Readonly<DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>>): JSX.Element {
   const { children, className, ...rest } = props;

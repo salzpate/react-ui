@@ -3,6 +3,7 @@
 export default {
   extends: ['stylelint-config-recommended', 'stylelint-prettier/recommended'],
   plugins: ['stylelint-order', 'stylelint-prettier'],
+  ignoreFiles: ['node_modules/**', 'dist/**', 'coverage/**', 'test-results/**', 'storybook-static/**'],
   rules: {
     'font-family-no-missing-generic-family-keyword': [
       true,
@@ -19,7 +20,13 @@ export default {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
+        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen', 'layer', 'theme', 'custom-variant', 'custom-selector', 'import'],
+      },
+    ],
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: ['theme'],
       },
     ],
     'order/properties-alphabetical-order': true,

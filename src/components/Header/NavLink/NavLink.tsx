@@ -8,7 +8,7 @@ const navLinkClassName =
 const navLinkActiveClassName =
   'w-full flex items-center px-2 py-3 text-sm bg-gray-300 uppercase rounded-md text-gray-900 transition ease-in-out duration-150 hover:bg-gray-300 focus:outline-hidden focus:bg-gray-400 focus:shadow-outline-gray dark:text-gray-200 dark:bg-black dark:hover:bg-black dark:focus:bg-gray-800';
 
-function NavLink(props: Readonly<NavMenu>): JSX.Element {
+function NavLink(props: Readonly<Omit<NavMenu, 'id'>>): JSX.Element {
   const { href, children, activeMenu, activeMenuName } = props;
   return (
     <Link href={href} className={activeMenuName && activeMenu && activeMenu === activeMenuName ? navLinkActiveClassName : navLinkClassName}>
