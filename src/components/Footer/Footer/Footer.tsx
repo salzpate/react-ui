@@ -11,7 +11,7 @@ function Footer(props: Readonly<FooterProps>): JSX.Element {
   const { text, menuItems } = props;
   return (
     <footer className="w-full bg-gray-800 py-6 dark:bg-gray-900">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between sm:flex-row md:flex-wrap">
           <div className="order-2 flex items-center lg:order-1">
             <div className="my-8 text-center text-xs font-thin text-gray-400 md:my-0 md:text-left md:text-sm">{text}</div>
