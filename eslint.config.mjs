@@ -1,8 +1,8 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
-import storybook from 'eslint-plugin-storybook';
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import storybook from 'eslint-plugin-storybook';
 
 const eslintConfig = defineConfig([
   globalIgnores(['.next/**', 'out/**', 'build/**', 'dist/**', 'coverage/**', 'test-results/**', 'storybook-static/**', 'node_modules/**', 'next-env.d.ts', 'postcss.config.mjs', '**/setupTests.ts']),
