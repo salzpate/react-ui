@@ -16,9 +16,9 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/react-ui.mjs",
-      "require": "./dist/react-ui.umd.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/react-ui.umd.js"
     },
     "./styles": "./dist/style.css"
   },
