@@ -10,3 +10,6 @@ storybook-static
 # Test outputs
 coverage
 test-results
+
+# TypeScript
+*.tsbuildinfo

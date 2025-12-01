@@ -30,3 +30,5 @@ public/**
 *.ico
 *.avif
 *.webp
+
+*.tsbuildinfo
