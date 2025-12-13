@@ -11,7 +11,9 @@
     "url": "https://github.com/salzpate/react-ui.git"
   },
   "module": "dist/react-ui.mjs",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -43,7 +45,7 @@
     }
   },
   "peerDependencies": {
-    "next": "^16.0.0",
+    "next": "^16.0.10",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },
@@ -53,40 +55,41 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@storybook/addon-docs": "^10.1.4",
-    "@storybook/nextjs": "^10.1.4",
-    "@storybook/nextjs-vite": "^10.1.4",
+    "@storybook/addon-docs": "^10.1.8",
+    "@storybook/nextjs": "^10.1.8",
+    "@storybook/nextjs-vite": "^10.1.8",
     "@tailwindcss/cli": "^4.1.17",
     "@tailwindcss/postcss": "^4.1.17",
     "@tailwindcss/vite": "^4.1.17",
+    "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.10.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
     "@vitest/coverage-v8": "^4.0.15",
     "@vitest/ui": "^4.0.15",
-    "eslint": "^9.39.1",
-    "eslint-config-next": "^16.0.7",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^16.0.10",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-storybook": "^10.1.4",
+    "eslint-plugin-storybook": "^10.1.8",
     "husky": "^9.1.7",
     "jsdom": "^27.2.0",
-    "next": "^16.0.7",
+    "next": "^16.0.10",
     "postcss": "^8.5.6",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "storybook": "^10.1.4",
+    "storybook": "^10.1.8",
     "stylelint": "^16.26.1",
     "stylelint-config-recommended": "^17.0.0",
     "stylelint-order": "^7.0.0",
     "stylelint-prettier": "^5.0.3",
     "tailwindcss": "^4.1.17",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.9.3",
+    "typescript": "^5.7.2",
     "vite": "^7.2.6",
     "vite-plugin-dts": "^4.5.4",
     "vite-tsconfig-paths": "^5.1.4",
@@ -94,6 +97,6 @@
   },
   "optionalDependencies": {
     "@parcel/watcher-linux-x64-glibc": "^2.5.1",
-    "@rollup/rollup-linux-x64-gnu": "^4.53.3"
+    "@rollup/rollup-linux-x64-gnu": "^4.28.1"
   }
 }
