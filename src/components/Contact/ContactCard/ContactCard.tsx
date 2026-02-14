@@ -19,7 +19,7 @@ interface ContactCardProps {
 }
 
 function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
-  const { name, position, email, emailHref, id, className = 'bg-gray-200 dark:bg-gray-900', imageSrc, phone, fax, street, town } = props;
+  const { name, position, email, emailHref, id, className = 'bg-gray-200 dark:bg-gray-900', imageClassName, imageSrc, phone, fax, street, town } = props;
 
   let emailSplit;
   if (email) {
@@ -27,7 +27,7 @@ function ContactCard(props: Readonly<ContactCardProps>): JSX.Element {
   }
   return (
     <div id={id} className={['overflow-hidden', className].join(' ')}>
-      <img className={cn('images-dark w-full pb-4', className)} src={imageSrc} alt={name} />
+      <img className={cn('images-dark w-full pb-4', imageClassName)} src={imageSrc} alt={name} />
       <div className="p-4 text-center">
         <h3 className="mb-4 text-lg font-medium tracking-tight text-gray-900 sm:text-xl lg:text-2xl dark:text-gray-200">{name}</h3>
         {position && <div className="text-xs">{position}</div>}
