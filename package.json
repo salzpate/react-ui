@@ -11,9 +11,7 @@
     "url": "https://github.com/salzpate/react-ui.git"
   },
   "module": "dist/react-ui.mjs",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
