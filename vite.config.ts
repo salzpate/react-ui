@@ -18,7 +18,7 @@ export default defineConfig({
       fileName: 'react-ui',
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime', 'clsx', 'tailwind-merge', 'react-hook-form', '@heroicons/react'],
+      external: ['next', 'react', 'react-dom', 'react/jsx-runtime', 'clsx', 'tailwind-merge', 'react-hook-form', '@heroicons/react'],
     },
     sourcemap: true,
     target: 'es2020',
