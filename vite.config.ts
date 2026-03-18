@@ -14,22 +14,11 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src', 'index.ts'),
       name: '@salzpate/react-ui',
-      formats: ['es', 'umd'],
+      formats: ['es'],
       fileName: 'react-ui',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime', 'clsx', 'tailwind-merge', 'react-hook-form', '@heroicons/react'],
-      output: {
-        globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM',
-          'react/jsx-runtime': 'jsxRuntime',
-          clsx: 'clsx',
-          'tailwind-merge': 'tailwindMerge',
-          'react-hook-form': 'ReactHookForm',
-          '@heroicons/react': 'Heroicons',
-        },
-      },
     },
     sourcemap: true,
     target: 'es2020',

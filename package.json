@@ -1,22 +1,22 @@
 {
   "name": "@salzpate/react-ui",
   "description": "React UI component library built with Tailwind CSS",
+  "type": "module",
   "types": "dist/index.d.ts",
-  "main": "dist/react-ui.umd.js",
-  "version": "1.4.13",
+  "main": "dist/react-ui.js",
+  "version": "1.5.0",
   "license": "Apache-2.0",
   "author": "Ronny Krammer",
   "repository": {
     "type": "git",
     "url": "https://github.com/salzpate/react-ui.git"
   },
-  "module": "dist/react-ui.mjs",
+  "module": "dist/react-ui.js",
   "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/react-ui.mjs",
-      "require": "./dist/react-ui.umd.js"
+      "import": "./dist/react-ui.js"
     },
     "./styles": "./dist/style.css"
   },
