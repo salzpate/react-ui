@@ -12,9 +12,7 @@
     "url": "https://github.com/salzpate/react-ui.git"
   },
   "module": "dist/react-ui.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
