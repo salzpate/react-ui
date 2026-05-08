@@ -33,6 +33,8 @@ export default defineConfig({
     dts({
       include: 'src',
       exclude: ['node_modules', 'dist', 'vite.config.mts', '**/*.test.{ts,tsx}', 'src/test', 'src/config/test', 'stories', '.storybook'],
+      outDirs: 'dist',
+      entryRoot: 'src',
     }),
   ],
   test: {
