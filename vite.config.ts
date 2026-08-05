@@ -3,6 +3,8 @@
 
 import { resolve } from 'node:path';
 
+const dirname = import.meta.dirname;
+
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
@@ -12,7 +14,7 @@ export default defineConfig({
   base: './',
   build: {
     lib: {
-      entry: resolve(__dirname, 'src', 'index.ts'),
+      entry: resolve(dirname, 'src', 'index.ts'),
       name: '@salzpate/react-ui',
       formats: ['es'],
       fileName: 'react-ui',
