@@ -4,7 +4,7 @@
   "type": "module",
   "types": "dist/index.d.ts",
   "main": "dist/react-ui.js",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "license": "Apache-2.0",
   "author": "Ronny Krammer",
   "repository": {
@@ -12,7 +12,9 @@
     "url": "https://github.com/salzpate/react-ui.git"
   },
   "module": "dist/react-ui.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -45,57 +47,57 @@
     }
   },
   "peerDependencies": {
-    "next": "^16.3.4",
+    "next": "^16.4.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^3.6.0"
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
-    "@storybook/addon-docs": "^10.6.0",
-    "@storybook/nextjs": "^10.6.0",
-    "@storybook/nextjs-vite": "^10.6.0",
+    "@storybook/addon-docs": "^10.6.1",
+    "@storybook/nextjs": "^10.6.1",
+    "@storybook/nextjs-vite": "^10.6.1",
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/vite": "^4.3.3",
-    "@testing-library/dom": "^10.4.1",
+    "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.7",
-    "@types/node": "^24.12.3",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
-    "@vitejs/plugin-react": "^6.1.1",
-    "@vitest/coverage-v8": "^4.1.11",
-    "@vitest/ui": "^4.1.11",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "@vitest/coverage-v8": "^5.0.3",
+    "@vitest/ui": "^5.0.3",
     "eslint": "^9.39.5",
-    "eslint-config-next": "^16.3.4",
+    "eslint-config-next": "^16.4.0",
     "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-simple-import-sort": "^14.0.0",
-    "eslint-plugin-storybook": "^10.6.0",
+    "eslint-plugin-storybook": "^10.6.1",
     "husky": "^9.1.7",
     "jsdom": "^29.1.1",
-    "next": "^16.3.4",
-    "postcss": "^8.5.28",
-    "prettier": "^3.9.6",
+    "next": "^16.4.0",
+    "postcss": "^8.5.29",
+    "prettier": "^3.9.9",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "storybook": "^10.6.0",
-    "stylelint": "^17.14.1",
+    "storybook": "^10.6.1",
+    "stylelint": "^17.16.0",
     "stylelint-config-recommended": "^18.0.0",
     "stylelint-order": "^8.1.1",
     "stylelint-prettier": "^5.0.3",
     "tailwindcss": "^4.3.3",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^6.0.3",
-    "vite": "^8.2.2",
-    "vite-plugin-dts": "^5.1.0",
-    "vitest": "^4.1.11"
+    "vite": "^8.3.3",
+    "vite-plugin-dts": "^5.1.2",
+    "vitest": "^5.0.3"
   },
   "optionalDependencies": {
     "@parcel/watcher-linux-x64-glibc": "^2.6.0",
-    "@rollup/rollup-linux-x64-gnu": "^4.63.1"
+    "@rollup/rollup-linux-x64-gnu": "^4.64.0"
   }
 }
