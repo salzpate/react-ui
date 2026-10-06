@@ -15,4 +15,4 @@ test-results
 *.tsbuildinfo
 
 # vitest
-./vitest
+.vitest
